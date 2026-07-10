@@ -1,0 +1,28 @@
+{
+  "runId": "mre6w00k",
+  "scenario": "img2img-upload-ref",
+  "summary": {
+    "uploadRefCalled": true,
+    "uploadRefKind": "image",
+    "temporaryObjectKey": "temp/media-refs/20260710/user-1/ref.png",
+    "ttlDays": 7,
+    "img2imgCalled": true,
+    "containsBase64": false,
+    "workspacePath": "_media/creation/images/20260710/result.png"
+  },
+  "img2imgBody": {
+    "prompt": "换成雨天",
+    "imageUrlHost": "oss.example",
+    "size": "1:1"
+  },
+  "evidence": [
+    "Reference upload used temporary OSS object key.",
+    "img2img body used imageUrl instead of base64.",
+    "Generated result points at workspace storage."
+  ],
+  "redaction": [
+    "Raw multipart body omitted.",
+    "Local host URLs omitted.",
+    "Only mock OSS host is shown."
+  ]
+}
