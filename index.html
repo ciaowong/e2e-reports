@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>媒体存储 E2E 报告</title>
+  <title>E2E 报告</title>
   <style>
     :root {
       color-scheme: light;
@@ -12,6 +12,8 @@
       --muted: #6a6f76;
       --line: #dedede;
       --panel: #fff;
+      --ok: #157f4f;
+      --warn: #a44900;
       --accent: #155eef;
     }
     * { box-sizing: border-box; }
@@ -23,146 +25,358 @@
       line-height: 1.45;
     }
     main {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 0 auto;
       padding: 18px clamp(14px, 4vw, 28px) 42px;
     }
     header {
-      padding: 8px 0 18px;
+      padding: 6px 0 16px;
       border-bottom: 1px solid var(--line);
     }
     h1 {
-      margin: 0;
+      margin: 8px 0 0;
       font-size: clamp(28px, 8vw, 44px);
       line-height: 1.05;
       letter-spacing: 0;
     }
     h2 {
-      margin: 30px 0 10px;
-      font-size: 22px;
-      line-height: 1.25;
-      letter-spacing: 0;
-    }
-    h3 {
-      margin: 16px 0 10px;
-      color: var(--muted);
-      font-size: 15px;
-      font-weight: 700;
+      margin: 30px 0 12px;
+      font-size: 20px;
       letter-spacing: 0;
     }
     a {
       color: var(--accent);
       text-decoration: none;
     }
-    .feature {
-      padding: 2px 0 8px;
-      border-bottom: 1px solid var(--line);
+    nav, .group-heading, .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
     }
-    .report-list {
+    nav {
+      font-size: 14px;
+    }
+    .subtitle, .group-heading p, .note {
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+    .metrics {
       display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 10px;
-      margin: 0 0 14px;
+      margin: 16px 0 20px;
     }
-    .report-link {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px;
-      align-items: center;
-      padding: 13px 14px;
+    .metric, .report-card {
+      min-width: 0;
+      padding: 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
+    }
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .metric strong {
+      display: block;
+      overflow-wrap: anywhere;
+      font-size: 15px;
+    }
+    .report-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .report-card h2 {
+      margin: 0 0 6px;
       font-size: 17px;
-      font-weight: 700;
+    }
+    .report-card p {
+      margin: 6px 0;
+      color: var(--muted);
+      font-size: 14px;
       overflow-wrap: anywhere;
     }
-    .report-link time,
-    .report-link span {
+    .badge {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
       color: var(--muted);
-      font-size: 13px;
-      font-weight: 600;
-      white-space: nowrap;
+      font-size: 12px;
+      background: #fafafa;
     }
-    @media (max-width: 560px) {
-      .report-link {
-        grid-template-columns: 1fr;
-        gap: 4px;
+    .badge.ok {
+      border-color: #b7e2cd;
+      color: var(--ok);
+      background: #eefaf3;
+      font-weight: 700;
+    }
+    .badge.warn {
+      border-color: #ffd0a8;
+      color: var(--warn);
+      background: #fff3e8;
+      font-weight: 700;
+    }
+    figure {
+      margin: 0 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--panel);
+    }
+    img, video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 0 12px;
+    }
+    summary {
+      min-height: 44px;
+      padding: 12px 0;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    @media (min-width: 760px) {
+      .metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
-      .report-link time,
-      .report-link span {
-        white-space: normal;
+      .report-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
   </style>
 </head>
 <body>
   <main>
-    <header>
-      <h1>媒体存储 E2E 报告</h1>
-    </header>
 
-    <section class="feature" id="current-chat-reply-real">
-      <h2>真实聊天回复基线</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/">
-          <strong>移动端聊天回复基线</strong>
-          <time datetime="2026-07-10T21:22:19+08:00">新增 21:22:19</time>
-        </a>
-        <a class="report-link" href="reports/2026-07-10-current-chat-reply-real/">
-          <strong>真实聊天回复基线</strong>
-          <span>历史报告</span>
-        </a>
+      <header>
+        <h1>E2E 报告</h1>
+        <p class="subtitle">按上传日期倒序排列，并按功能归类。没有录屏的报告不会发布为可通过报告。</p>
+      </header>
+      <div class="metrics">
+        <article class="metric"><span>已发布报告</span><strong>14</strong></article>
+        <article class="metric"><span>媒体报告</span><strong>12</strong></article>
+        <article class="metric"><span>打回重做</span><strong>14</strong></article>
+        <article class="metric"><span>录屏</span><strong>14</strong></article>
       </div>
-    </section>
 
-    <section class="feature" id="current-auth-login-real">
-      <h2>真实登录基线</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/">
-          <strong>移动端登录基线</strong>
-          <time datetime="2026-07-10T21:21:46+08:00">新增 21:21:46</time>
-        </a>
-        <a class="report-link" href="reports/2026-07-10-current-auth-login-real/">
-          <strong>真实登录基线</strong>
-          <span>历史报告</span>
-        </a>
-      </div>
-    </section>
+      <section>
+        <details>
+          <summary>打回重做列表：14 份</summary>
+          <ul><li>evidence-report-mreeomrq-real-img2img-upload-ref：缺截图</li>
+<li>evidence-report-mre900ez-video-multiref-5-images：缺录屏</li>
+<li>evidence-report-mre8zv6c-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre8u9ys-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre8jy9s-video-multiref-5-images：缺录屏</li>
+<li>evidence-report-mre8jtod-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre8hloh-video-multiref-5-images：缺录屏</li>
+<li>evidence-report-mre8hgjg-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre7xfy4-video-multiref-5-images：缺录屏</li>
+<li>evidence-report-mre7v2gd-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre7gmzj-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre7ctp3-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre6xlbj-img2img-upload-ref：缺录屏</li>
+<li>evidence-report-mre6w00k-img2img-upload-ref：缺录屏</li></ul>
+        </details>
+      </section>
 
-    <section class="feature" id="chat-mcp-video">
-      <h2>聊天 MCP 图生视频</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/report-04/"><strong>报告 04</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-03/"><strong>报告 03</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-02/"><strong>报告 02</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-01/"><strong>报告 01</strong><span>历史报告</span></a>
-      </div>
-    </section>
 
-    <section class="feature" id="chat-mcp-image">
-      <h2>聊天 MCP 图生图</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/report-08/"><strong>报告 08</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-07/"><strong>报告 07</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-06/"><strong>报告 06</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-05/"><strong>报告 05</strong><span>历史报告</span></a>
-      </div>
-    </section>
+            <section>
+              <div class="group-heading">
+                <h2><a href="reports/2026-07-10/">2026-07-10</a></h2>
+                <p>按上传时间倒序</p>
+              </div>
 
-    <section class="feature" id="workspace-image">
-      <h2>真实创作页图生图</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/report-12/"><strong>报告 12</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-11/"><strong>报告 11</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-10/"><strong>报告 10</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-09/"><strong>报告 09</strong><span>历史报告</span></a>
-      </div>
-    </section>
+                <section>
+                  <div class="group-heading">
+                    <h2><a href="reports/2026-07-10/chat-mcp-create-video/">聊天 MCP 图生视频</a></h2>
+                    <p>4 份</p>
+                  </div>
+                  <div class="report-list">
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-create-video/mreihz4p-chat-mcp-create_video/">聊天 MCP 图生视频</a></h2>
+        <p>evidence-report-mreihz4p-chat-mcp-create_video</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生视频</span>
+          <span class="badge">截图 10</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-create-video/mreid7nd-chat-mcp-create_video/">聊天 MCP 图生视频</a></h2>
+        <p>evidence-report-mreid7nd-chat-mcp-create_video</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生视频</span>
+          <span class="badge">截图 7</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-create-video/mrei8qqt-chat-mcp-create_video/">聊天 MCP 图生视频</a></h2>
+        <p>evidence-report-mrei8qqt-chat-mcp-create_video</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生视频</span>
+          <span class="badge">截图 7</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-create-video/mrehze0z-chat-mcp-create_video/">聊天 MCP 图生视频</a></h2>
+        <p>evidence-report-mrehze0z-chat-mcp-create_video</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生视频</span>
+          <span class="badge">截图 7</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+    </div>
+                </section>
+
+                <section>
+                  <div class="group-heading">
+                    <h2><a href="reports/2026-07-10/chat-mcp-edit-image/">聊天 MCP 图生图</a></h2>
+                    <p>4 份</p>
+                  </div>
+                  <div class="report-list">
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-edit-image/mrehnhzk-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
+        <p>evidence-report-mrehnhzk-chat-mcp-edit_image</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生图</span>
+          <span class="badge">截图 8</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-edit-image/mreh66iz-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
+        <p>evidence-report-mreh66iz-chat-mcp-edit_image</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生图</span>
+          <span class="badge">截图 6</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-edit-image/mreghxl7-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
+        <p>evidence-report-mreghxl7-chat-mcp-edit_image</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生图</span>
+          <span class="badge">截图 6</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/chat-mcp-edit-image/mrefv5tx-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
+        <p>evidence-report-mrefv5tx-chat-mcp-edit_image</p>
+        <div class="badges">
+          <span class="badge">聊天 MCP 图生图</span>
+          <span class="badge">截图 6</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+    </div>
+                </section>
+
+                <section>
+                  <div class="group-heading">
+                    <h2><a href="reports/2026-07-10/creation-img2img/">创作页图生图</a></h2>
+                    <p>4 份</p>
+                  </div>
+                  <div class="report-list">
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/creation-img2img/mrefr4c4-real-img2img-upload-ref/">真实创作页图生图</a></h2>
+        <p>evidence-report-mrefr4c4-real-img2img-upload-ref</p>
+        <div class="badges">
+          <span class="badge">创作页图生图</span>
+          <span class="badge">截图 4</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/creation-img2img/mrefjp0g-real-img2img-upload-ref/">真实创作页图生图</a></h2>
+        <p>evidence-report-mrefjp0g-real-img2img-upload-ref</p>
+        <div class="badges">
+          <span class="badge">创作页图生图</span>
+          <span class="badge">截图 2</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/creation-img2img/mrefdhu3-real-img2img-upload-ref/">真实创作页图生图</a></h2>
+        <p>evidence-report-mrefdhu3-real-img2img-upload-ref</p>
+        <div class="badges">
+          <span class="badge">创作页图生图</span>
+          <span class="badge">截图 2</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+
+
+      <article class="report-card">
+        <h2><a href="reports/2026-07-10/creation-img2img/mrefc2k5-real-img2img-upload-ref/">真实创作页图生图</a></h2>
+        <p>evidence-report-mrefc2k5-real-img2img-upload-ref</p>
+        <div class="badges">
+          <span class="badge">创作页图生图</span>
+          <span class="badge">截图 1</span>
+          <span class="badge ok">录屏 1</span>
+        </div>
+      </article>
+    </div>
+                </section>
+
+            </section>
+
+
+          <section>
+            <h2>其他报告</h2>
+            <div class="report-list">
+            <article class="report-card">
+              <h2><a href="reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/">真实登录基线</a></h2>
+              <p>既有报告</p>
+              <div class="badges"><span class="badge ok">录屏 1</span></div>
+            </article>
+
+
+            <article class="report-card">
+              <h2><a href="reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/">真实聊天回复基线</a></h2>
+              <p>既有报告</p>
+              <div class="badges"><span class="badge ok">录屏 1</span></div>
+            </article>
+            </div>
+          </section>
+
+
   </main>
 </body>
 </html>

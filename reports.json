@@ -1,0 +1,272 @@
+{
+  "generatedAt": "2026-07-10T14:03:38+00:00",
+  "policy": {
+    "recordingRequired": true,
+    "missingRecordingDisposition": "rerun",
+    "layout": "reports/<upload-date>/<feature>/<run>/"
+  },
+  "reports": [
+    {
+      "slug": "mreihz4p-chat-mcp-create_video",
+      "title": "聊天 MCP 图生视频",
+      "href": "reports/2026-07-10/chat-mcp-create-video/mreihz4p-chat-mcp-create_video/",
+      "sourceReport": "evidence-report-mreihz4p-chat-mcp-create_video",
+      "uploadedAt": "2026-07-10T15:22:07+08:00",
+      "uploadedTimestamp": 1783668127.649926,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-create-video",
+        "label": "聊天 MCP 图生视频",
+        "sort": 10
+      },
+      "screenshots": 10,
+      "videos": 1
+    },
+    {
+      "slug": "mrehnhzk-chat-mcp-edit_image",
+      "title": "聊天 MCP 图生图",
+      "href": "reports/2026-07-10/chat-mcp-edit-image/mrehnhzk-chat-mcp-edit_image/",
+      "sourceReport": "evidence-report-mrehnhzk-chat-mcp-edit_image",
+      "uploadedAt": "2026-07-10T15:22:07+08:00",
+      "uploadedTimestamp": 1783668127.53574,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-edit-image",
+        "label": "聊天 MCP 图生图",
+        "sort": 20
+      },
+      "screenshots": 8,
+      "videos": 1
+    },
+    {
+      "slug": "mrefr4c4-real-img2img-upload-ref",
+      "title": "真实创作页图生图",
+      "href": "reports/2026-07-10/creation-img2img/mrefr4c4-real-img2img-upload-ref/",
+      "sourceReport": "evidence-report-mrefr4c4-real-img2img-upload-ref",
+      "uploadedAt": "2026-07-10T15:22:07+08:00",
+      "uploadedTimestamp": 1783668127.499766,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "creation-img2img",
+        "label": "创作页图生图",
+        "sort": 40
+      },
+      "screenshots": 4,
+      "videos": 1
+    },
+    {
+      "slug": "mreid7nd-chat-mcp-create_video",
+      "title": "聊天 MCP 图生视频",
+      "href": "reports/2026-07-10/chat-mcp-create-video/mreid7nd-chat-mcp-create_video/",
+      "sourceReport": "evidence-report-mreid7nd-chat-mcp-create_video",
+      "uploadedAt": "2026-07-10T13:43:42+08:00",
+      "uploadedTimestamp": 1783662222.067524,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-create-video",
+        "label": "聊天 MCP 图生视频",
+        "sort": 10
+      },
+      "screenshots": 7,
+      "videos": 1
+    },
+    {
+      "slug": "mrei8qqt-chat-mcp-create_video",
+      "title": "聊天 MCP 图生视频",
+      "href": "reports/2026-07-10/chat-mcp-create-video/mrei8qqt-chat-mcp-create_video/",
+      "sourceReport": "evidence-report-mrei8qqt-chat-mcp-create_video",
+      "uploadedAt": "2026-07-10T13:40:59+08:00",
+      "uploadedTimestamp": 1783662059.402174,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-create-video",
+        "label": "聊天 MCP 图生视频",
+        "sort": 10
+      },
+      "screenshots": 7,
+      "videos": 1
+    },
+    {
+      "slug": "mrehze0z-chat-mcp-create_video",
+      "title": "聊天 MCP 图生视频",
+      "href": "reports/2026-07-10/chat-mcp-create-video/mrehze0z-chat-mcp-create_video/",
+      "sourceReport": "evidence-report-mrehze0z-chat-mcp-create_video",
+      "uploadedAt": "2026-07-10T13:34:52+08:00",
+      "uploadedTimestamp": 1783661692.96228,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-create-video",
+        "label": "聊天 MCP 图生视频",
+        "sort": 10
+      },
+      "screenshots": 7,
+      "videos": 1
+    },
+    {
+      "slug": "mreh66iz-chat-mcp-edit_image",
+      "title": "聊天 MCP 图生图",
+      "href": "reports/2026-07-10/chat-mcp-edit-image/mreh66iz-chat-mcp-edit_image/",
+      "sourceReport": "evidence-report-mreh66iz-chat-mcp-edit_image",
+      "uploadedAt": "2026-07-10T13:15:32+08:00",
+      "uploadedTimestamp": 1783660532.689817,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-edit-image",
+        "label": "聊天 MCP 图生图",
+        "sort": 20
+      },
+      "screenshots": 6,
+      "videos": 1
+    },
+    {
+      "slug": "mreghxl7-chat-mcp-edit_image",
+      "title": "聊天 MCP 图生图",
+      "href": "reports/2026-07-10/chat-mcp-edit-image/mreghxl7-chat-mcp-edit_image/",
+      "sourceReport": "evidence-report-mreghxl7-chat-mcp-edit_image",
+      "uploadedAt": "2026-07-10T12:56:40+08:00",
+      "uploadedTimestamp": 1783659400.944143,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-edit-image",
+        "label": "聊天 MCP 图生图",
+        "sort": 20
+      },
+      "screenshots": 6,
+      "videos": 1
+    },
+    {
+      "slug": "mrefv5tx-chat-mcp-edit_image",
+      "title": "聊天 MCP 图生图",
+      "href": "reports/2026-07-10/chat-mcp-edit-image/mrefv5tx-chat-mcp-edit_image/",
+      "sourceReport": "evidence-report-mrefv5tx-chat-mcp-edit_image",
+      "uploadedAt": "2026-07-10T12:38:59+08:00",
+      "uploadedTimestamp": 1783658339.117026,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "chat-mcp-edit-image",
+        "label": "聊天 MCP 图生图",
+        "sort": 20
+      },
+      "screenshots": 6,
+      "videos": 1
+    },
+    {
+      "slug": "mrefjp0g-real-img2img-upload-ref",
+      "title": "真实创作页图生图",
+      "href": "reports/2026-07-10/creation-img2img/mrefjp0g-real-img2img-upload-ref/",
+      "sourceReport": "evidence-report-mrefjp0g-real-img2img-upload-ref",
+      "uploadedAt": "2026-07-10T12:24:53+08:00",
+      "uploadedTimestamp": 1783657493.118642,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "creation-img2img",
+        "label": "创作页图生图",
+        "sort": 40
+      },
+      "screenshots": 2,
+      "videos": 1
+    },
+    {
+      "slug": "mrefdhu3-real-img2img-upload-ref",
+      "title": "真实创作页图生图",
+      "href": "reports/2026-07-10/creation-img2img/mrefdhu3-real-img2img-upload-ref/",
+      "sourceReport": "evidence-report-mrefdhu3-real-img2img-upload-ref",
+      "uploadedAt": "2026-07-10T12:18:08+08:00",
+      "uploadedTimestamp": 1783657088.517098,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "creation-img2img",
+        "label": "创作页图生图",
+        "sort": 40
+      },
+      "screenshots": 2,
+      "videos": 1
+    },
+    {
+      "slug": "mrefc2k5-real-img2img-upload-ref",
+      "title": "真实创作页图生图",
+      "href": "reports/2026-07-10/creation-img2img/mrefc2k5-real-img2img-upload-ref/",
+      "sourceReport": "evidence-report-mrefc2k5-real-img2img-upload-ref",
+      "uploadedAt": "2026-07-10T12:17:01+08:00",
+      "uploadedTimestamp": 1783657021.867482,
+      "uploadedDate": "2026-07-10",
+      "category": {
+        "slug": "creation-img2img",
+        "label": "创作页图生图",
+        "sort": 40
+      },
+      "screenshots": 1,
+      "videos": 1
+    }
+  ],
+  "skipped": [
+    {
+      "sourceReport": "evidence-report-mreeomrq-real-img2img-upload-ref",
+      "reason": "缺截图"
+    },
+    {
+      "sourceReport": "evidence-report-mre900ez-video-multiref-5-images",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre8zv6c-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre8u9ys-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre8jy9s-video-multiref-5-images",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre8jtod-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre8hloh-video-multiref-5-images",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre8hgjg-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre7xfy4-video-multiref-5-images",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre7v2gd-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre7gmzj-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre7ctp3-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre6xlbj-img2img-upload-ref",
+      "reason": "缺录屏"
+    },
+    {
+      "sourceReport": "evidence-report-mre6w00k-img2img-upload-ref",
+      "reason": "缺录屏"
+    }
+  ],
+  "existingReports": [
+    {
+      "href": "reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/",
+      "title": "真实登录基线",
+      "videos": 1
+    },
+    {
+      "href": "reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/",
+      "title": "真实聊天回复基线",
+      "videos": 1
+    }
+  ]
+}

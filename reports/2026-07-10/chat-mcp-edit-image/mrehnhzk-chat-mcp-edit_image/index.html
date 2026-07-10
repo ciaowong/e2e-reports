@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>聊天 MCP 图生图</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f6;
+      --ink: #181818;
+      --muted: #6a6f76;
+      --line: #dedede;
+      --panel: #fff;
+      --ok: #157f4f;
+      --warn: #a44900;
+      --accent: #155eef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 18px clamp(14px, 4vw, 28px) 42px;
+    }
+    header {
+      padding: 6px 0 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 8px 0 0;
+      font-size: clamp(28px, 8vw, 44px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 30px 0 12px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav, .group-heading, .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+    }
+    nav {
+      font-size: 14px;
+    }
+    .subtitle, .group-heading p, .note {
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0 20px;
+    }
+    .metric, .report-card {
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .metric strong {
+      display: block;
+      overflow-wrap: anywhere;
+      font-size: 15px;
+    }
+    .report-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .report-card h2 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+    .report-card p {
+      margin: 6px 0;
+      color: var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      color: var(--muted);
+      font-size: 12px;
+      background: #fafafa;
+    }
+    .badge.ok {
+      border-color: #b7e2cd;
+      color: var(--ok);
+      background: #eefaf3;
+      font-weight: 700;
+    }
+    .badge.warn {
+      border-color: #ffd0a8;
+      color: var(--warn);
+      background: #fff3e8;
+      font-weight: 700;
+    }
+    figure {
+      margin: 0 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--panel);
+    }
+    img, video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 0 12px;
+    }
+    summary {
+      min-height: 44px;
+      padding: 12px 0;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    @media (min-width: 760px) {
+      .metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .report-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+      <header>
+        <nav>
+          <a href="../../../../">全部报告</a>
+          <a href="../../">2026-07-10</a>
+          <a href="../">聊天 MCP 图生图</a>
+        </nav>
+        <h1>聊天 MCP 图生图</h1>
+        <p class="subtitle">evidence-report-mrehnhzk-chat-mcp-edit_image</p>
+        <div class="badges">
+          <span class="badge ok">录屏齐全</span>
+          <span class="badge">上传日期 2026-07-10</span>
+        </div>
+      </header>
+      <h2>步骤截图</h2>
+
+        <figure>
+          <img src="assets/step-01.jpg" alt="步骤 1" loading="lazy" />
+          <figcaption>步骤 1</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-02.jpg" alt="步骤 2" loading="lazy" />
+          <figcaption>步骤 2</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-03.jpg" alt="步骤 3" loading="lazy" />
+          <figcaption>步骤 3</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-04.jpg" alt="步骤 4" loading="lazy" />
+          <figcaption>步骤 4</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-05.jpg" alt="步骤 5" loading="lazy" />
+          <figcaption>步骤 5</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-06.jpg" alt="步骤 6" loading="lazy" />
+          <figcaption>步骤 6</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-07.jpg" alt="步骤 7" loading="lazy" />
+          <figcaption>步骤 7</figcaption>
+        </figure>
+
+
+        <figure>
+          <img src="assets/step-08.jpg" alt="步骤 8" loading="lazy" />
+          <figcaption>步骤 8</figcaption>
+        </figure>
+
+      <h2>全过程录屏</h2>
+      <figure>
+        <video src="assets/recording.mp4" controls preload="metadata" playsinline></video>
+      </figure>
+
+  </main>
+</body>
+</html>
