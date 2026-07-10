@@ -28,94 +28,141 @@
       padding: 18px clamp(14px, 4vw, 28px) 42px;
     }
     header {
-      padding: 6px 0 16px;
+      padding: 8px 0 18px;
       border-bottom: 1px solid var(--line);
     }
     h1 {
-      margin: 8px 0 0;
+      margin: 0;
       font-size: clamp(28px, 8vw, 44px);
       line-height: 1.05;
       letter-spacing: 0;
     }
     h2 {
-      margin: 30px 0 12px;
-      font-size: 20px;
+      margin: 30px 0 10px;
+      font-size: 22px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 16px 0 10px;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 700;
       letter-spacing: 0;
     }
     a {
       color: var(--accent);
       text-decoration: none;
     }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 14px;
-      font-size: 14px;
+    .feature {
+      padding: 2px 0 8px;
+      border-bottom: 1px solid var(--line);
     }
     .report-list {
       display: grid;
-      gap: 12px;
-      margin-top: 22px;
+      gap: 10px;
+      margin: 0 0 14px;
     }
     .report-link {
-      display: block;
-      padding: 14px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 14px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       overflow-wrap: anywhere;
     }
-    figure {
-      margin: 0 0 16px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
-      background: var(--panel);
-    }
-    img, video {
-      display: block;
-      width: 100%;
-      height: auto;
-      background: #fff;
-    }
-    figcaption {
-      padding: 10px 12px;
+    .report-link time,
+    .report-link span {
       color: var(--muted);
-      font-size: 14px;
-      border-top: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
     }
-    @media (min-width: 800px) {
-      .report-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    @media (max-width: 560px) {
+      .report-link {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .report-link time,
+      .report-link span {
+        white-space: normal;
       }
     }
   </style>
 </head>
 <body>
   <main>
+    <header>
+      <h1>媒体存储 E2E 报告</h1>
+    </header>
 
-      <header>
-        <h1>媒体存储 E2E 报告</h1>
-      </header>
-      <div class="report-list"><a class="report-link" href="reports/2026-07-10-205102-current-auth-login-real/">2026-07-10 20:51 真实登录基线</a>
-<a class="report-link" href="reports/2026-07-10-203428-current-chat-reply-real/">2026-07-10 20:34 真实聊天回复基线</a>
-<a class="report-link" href="reports/report-01/">聊天 MCP 图生视频</a>
-<a class="report-link" href="reports/report-02/">聊天 MCP 图生视频</a>
-<a class="report-link" href="reports/report-03/">聊天 MCP 图生视频</a>
-<a class="report-link" href="reports/report-04/">聊天 MCP 图生视频</a>
-<a class="report-link" href="reports/report-05/">聊天 MCP 图生图</a>
-<a class="report-link" href="reports/report-06/">聊天 MCP 图生图</a>
-<a class="report-link" href="reports/report-07/">聊天 MCP 图生图</a>
-<a class="report-link" href="reports/report-08/">聊天 MCP 图生图</a>
-<a class="report-link" href="reports/report-09/">真实创作页图生图</a>
-<a class="report-link" href="reports/report-10/">真实创作页图生图</a>
-<a class="report-link" href="reports/report-11/">真实创作页图生图</a>
-<a class="report-link" href="reports/report-12/">真实创作页图生图</a>
-<a class="report-link" href="reports/2026-07-10-current-auth-login-real/">真实登录基线</a>
-<a class="report-link" href="reports/2026-07-10-current-chat-reply-real/">真实聊天回复基线</a></div>
+    <section class="feature" id="current-chat-reply-real">
+      <h2>真实聊天回复基线</h2>
+      <h3>2026-07-10</h3>
+      <div class="report-list">
+        <a class="report-link" href="reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/">
+          <strong>移动端聊天回复基线</strong>
+          <time datetime="2026-07-10T21:22:19+08:00">新增 21:22:19</time>
+        </a>
+        <a class="report-link" href="reports/2026-07-10-current-chat-reply-real/">
+          <strong>真实聊天回复基线</strong>
+          <span>历史报告</span>
+        </a>
+      </div>
+    </section>
 
+    <section class="feature" id="current-auth-login-real">
+      <h2>真实登录基线</h2>
+      <h3>2026-07-10</h3>
+      <div class="report-list">
+        <a class="report-link" href="reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/">
+          <strong>移动端登录基线</strong>
+          <time datetime="2026-07-10T21:21:46+08:00">新增 21:21:46</time>
+        </a>
+        <a class="report-link" href="reports/2026-07-10-current-auth-login-real/">
+          <strong>真实登录基线</strong>
+          <span>历史报告</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="feature" id="chat-mcp-video">
+      <h2>聊天 MCP 图生视频</h2>
+      <h3>2026-07-10</h3>
+      <div class="report-list">
+        <a class="report-link" href="reports/report-04/"><strong>报告 04</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-03/"><strong>报告 03</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-02/"><strong>报告 02</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-01/"><strong>报告 01</strong><span>历史报告</span></a>
+      </div>
+    </section>
+
+    <section class="feature" id="chat-mcp-image">
+      <h2>聊天 MCP 图生图</h2>
+      <h3>2026-07-10</h3>
+      <div class="report-list">
+        <a class="report-link" href="reports/report-08/"><strong>报告 08</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-07/"><strong>报告 07</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-06/"><strong>报告 06</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-05/"><strong>报告 05</strong><span>历史报告</span></a>
+      </div>
+    </section>
+
+    <section class="feature" id="workspace-image">
+      <h2>真实创作页图生图</h2>
+      <h3>2026-07-10</h3>
+      <div class="report-list">
+        <a class="report-link" href="reports/report-12/"><strong>报告 12</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-11/"><strong>报告 11</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-10/"><strong>报告 10</strong><span>历史报告</span></a>
+        <a class="report-link" href="reports/report-09/"><strong>报告 09</strong><span>历史报告</span></a>
+      </div>
+    </section>
   </main>
 </body>
 </html>
