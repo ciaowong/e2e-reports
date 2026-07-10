@@ -1,0 +1,46 @@
+{
+  "slug": "mrefdhu3-real-img2img-upload-ref",
+  "sourceReport": "evidence-report-mrefdhu3-real-img2img-upload-ref",
+  "runId": "mrefdhu3",
+  "class": "真实页面 E2E",
+  "scenario": "真实创作页图生图",
+  "facts": [
+    {
+      "label": "Run ID",
+      "value": "mrefdhu3"
+    },
+    {
+      "label": "类型",
+      "value": "真实页面 E2E"
+    },
+    {
+      "label": "场景",
+      "value": "真实创作页图生图"
+    },
+    {
+      "label": "截图",
+      "value": 2
+    },
+    {
+      "label": "录屏",
+      "value": "1 个 MP4"
+    },
+    {
+      "label": "Base64",
+      "value": "未使用"
+    }
+  ],
+  "assertions": [
+    "请求体使用 URL 引用，未携带 base64 图片。"
+  ],
+  "counts": {
+    "screenshots": 2,
+    "videos": 1
+  },
+  "workspacePaths": [],
+  "redaction": [
+    "未发布原始 network / WS / multipart 数据。",
+    "未发布访问凭证、个人标识、会话标识、容器标识。",
+    "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+  ]
+}

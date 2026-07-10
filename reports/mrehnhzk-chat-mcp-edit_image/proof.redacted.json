@@ -1,0 +1,59 @@
+{
+  "slug": "mrehnhzk-chat-mcp-edit_image",
+  "sourceReport": "evidence-report-mrehnhzk-chat-mcp-edit_image",
+  "runId": "mrehnhzk",
+  "class": "真实页面 E2E",
+  "scenario": "聊天 MCP 图生图",
+  "facts": [
+    {
+      "label": "Run ID",
+      "value": "mrehnhzk"
+    },
+    {
+      "label": "类型",
+      "value": "真实页面 E2E"
+    },
+    {
+      "label": "场景",
+      "value": "聊天 MCP 图生图"
+    },
+    {
+      "label": "截图",
+      "value": 8
+    },
+    {
+      "label": "录屏",
+      "value": "1 个 MP4"
+    },
+    {
+      "label": "上传目录",
+      "value": "workspace/uploads/images"
+    },
+    {
+      "label": "工具",
+      "value": "edit_image"
+    },
+    {
+      "label": "workspace",
+      "value": "_media/chat/images/20260710/02178366093343998c470d32e326dd7109413e831d170d88be6d1_0.png"
+    }
+  ],
+  "assertions": [
+    "聊天上传附件进入 workspace/uploads/images。",
+    "刷新重进后，聊天附件仍可见。",
+    "MCP 生成结果进入 workspace。"
+  ],
+  "counts": {
+    "screenshots": 8,
+    "videos": 1
+  },
+  "workspacePaths": [
+    "_media/chat/images/20260710/02178366093343998c470d32e326dd7109413e831d170d88be6d1_0.png",
+    "workspace/uploads/images/e2e-mcp-ref-mrehnhzk.png"
+  ],
+  "redaction": [
+    "未发布原始 network / WS / multipart 数据。",
+    "未发布访问凭证、个人标识、会话标识、容器标识。",
+    "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+  ]
+}

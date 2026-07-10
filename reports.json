@@ -1,0 +1,1467 @@
+[
+  {
+    "slug": "mre6w00k-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre6w00k-img2img-upload-ref",
+    "runId": "mre6w00k",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre6w00k"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre6w00k-img2img-upload-ref/",
+    "assetBytes": 132640
+  },
+  {
+    "slug": "mre6xlbj-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre6xlbj-img2img-upload-ref",
+    "runId": "mre6xlbj",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre6xlbj"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre6xlbj-img2img-upload-ref/",
+    "assetBytes": 132651
+  },
+  {
+    "slug": "mre7ctp3-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre7ctp3-img2img-upload-ref",
+    "runId": "mre7ctp3",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre7ctp3"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre7ctp3-img2img-upload-ref/",
+    "assetBytes": 132558
+  },
+  {
+    "slug": "mre7gmzj-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre7gmzj-img2img-upload-ref",
+    "runId": "mre7gmzj",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre7gmzj"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre7gmzj-img2img-upload-ref/",
+    "assetBytes": 132659
+  },
+  {
+    "slug": "mre7v2gd-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre7v2gd-img2img-upload-ref",
+    "runId": "mre7v2gd",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre7v2gd"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre7v2gd-img2img-upload-ref/",
+    "assetBytes": 132421
+  },
+  {
+    "slug": "mre7xfy4-video-multiref-5-images",
+    "sourceReport": "evidence-report-mre7xfy4-video-multiref-5-images",
+    "runId": "mre7xfy4",
+    "class": "mock 页面 E2E",
+    "scenario": "图生视频多参考图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre7xfy4"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生视频多参考图"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260709/e2e-media-video/e2e-image-1.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre7xfy4-video-multiref-5-images/",
+    "assetBytes": 147890
+  },
+  {
+    "slug": "mre8hgjg-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre8hgjg-img2img-upload-ref",
+    "runId": "mre8hgjg",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre8hgjg"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre8hgjg-img2img-upload-ref/",
+    "assetBytes": 132571
+  },
+  {
+    "slug": "mre8hloh-video-multiref-5-images",
+    "sourceReport": "evidence-report-mre8hloh-video-multiref-5-images",
+    "runId": "mre8hloh",
+    "class": "mock 页面 E2E",
+    "scenario": "图生视频多参考图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre8hloh"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生视频多参考图"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260709/e2e-media-video/e2e-image-1.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre8hloh-video-multiref-5-images/",
+    "assetBytes": 147890
+  },
+  {
+    "slug": "mre8jtod-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre8jtod-img2img-upload-ref",
+    "runId": "mre8jtod",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre8jtod"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre8jtod-img2img-upload-ref/",
+    "assetBytes": 132560
+  },
+  {
+    "slug": "mre8jy9s-video-multiref-5-images",
+    "sourceReport": "evidence-report-mre8jy9s-video-multiref-5-images",
+    "runId": "mre8jy9s",
+    "class": "mock 页面 E2E",
+    "scenario": "图生视频多参考图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre8jy9s"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生视频多参考图"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260709/e2e-media-video/e2e-image-1.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre8jy9s-video-multiref-5-images/",
+    "assetBytes": 147883
+  },
+  {
+    "slug": "mre8u9ys-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre8u9ys-img2img-upload-ref",
+    "runId": "mre8u9ys",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre8u9ys"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre8u9ys-img2img-upload-ref/",
+    "assetBytes": 132402
+  },
+  {
+    "slug": "mre8zv6c-img2img-upload-ref",
+    "sourceReport": "evidence-report-mre8zv6c-img2img-upload-ref",
+    "runId": "mre8zv6c",
+    "class": "mock 页面 E2E",
+    "scenario": "图生图参考图上传",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre8zv6c"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生图参考图上传"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/user-1/ref.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/result.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/result.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre8zv6c-img2img-upload-ref/",
+    "assetBytes": 132635
+  },
+  {
+    "slug": "mre900ez-video-multiref-5-images",
+    "sourceReport": "evidence-report-mre900ez-video-multiref-5-images",
+    "runId": "mre900ez",
+    "class": "mock 页面 E2E",
+    "scenario": "图生视频多参考图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mre900ez"
+      },
+      {
+        "label": "类型",
+        "value": "mock 页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "图生视频多参考图"
+      },
+      {
+        "label": "截图",
+        "value": 3
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260709/e2e-media-video/e2e-image-1.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 3,
+      "videos": 0
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mre900ez-video-multiref-5-images/",
+    "assetBytes": 147890
+  },
+  {
+    "slug": "mreeomrq-real-img2img-upload-ref",
+    "sourceReport": "evidence-report-mreeomrq-real-img2img-upload-ref",
+    "runId": "mreeomrq",
+    "class": "真实页面 E2E",
+    "scenario": "真实创作页图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mreeomrq"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "真实创作页图生图"
+      },
+      {
+        "label": "截图",
+        "value": 0
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 0,
+      "videos": 1
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mreeomrq-real-img2img-upload-ref/",
+    "assetBytes": 45294
+  },
+  {
+    "slug": "mrefc2k5-real-img2img-upload-ref",
+    "sourceReport": "evidence-report-mrefc2k5-real-img2img-upload-ref",
+    "runId": "mrefc2k5",
+    "class": "真实页面 E2E",
+    "scenario": "真实创作页图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrefc2k5"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "真实创作页图生图"
+      },
+      {
+        "label": "截图",
+        "value": 1
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 1,
+      "videos": 1
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrefc2k5-real-img2img-upload-ref/",
+    "assetBytes": 79089
+  },
+  {
+    "slug": "mrefdhu3-real-img2img-upload-ref",
+    "sourceReport": "evidence-report-mrefdhu3-real-img2img-upload-ref",
+    "runId": "mrefdhu3",
+    "class": "真实页面 E2E",
+    "scenario": "真实创作页图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrefdhu3"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "真实创作页图生图"
+      },
+      {
+        "label": "截图",
+        "value": 2
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 2,
+      "videos": 1
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrefdhu3-real-img2img-upload-ref/",
+    "assetBytes": 125839
+  },
+  {
+    "slug": "mrefjp0g-real-img2img-upload-ref",
+    "sourceReport": "evidence-report-mrefjp0g-real-img2img-upload-ref",
+    "runId": "mrefjp0g",
+    "class": "真实页面 E2E",
+    "scenario": "真实创作页图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrefjp0g"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "真实创作页图生图"
+      },
+      {
+        "label": "截图",
+        "value": 2
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      }
+    ],
+    "assertions": [
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 2,
+      "videos": 1
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrefjp0g-real-img2img-upload-ref/",
+    "assetBytes": 386747
+  },
+  {
+    "slug": "mrefr4c4-real-img2img-upload-ref",
+    "sourceReport": "evidence-report-mrefr4c4-real-img2img-upload-ref",
+    "runId": "mrefr4c4",
+    "class": "真实页面 E2E",
+    "scenario": "真实创作页图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrefr4c4"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "真实创作页图生图"
+      },
+      {
+        "label": "截图",
+        "value": 4
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "临时素材",
+        "value": "temp/media-refs/20260710/80887198-50b4-41ae-a041-9227897ccd4e/1783657724161-6mnv3arz.png"
+      },
+      {
+        "label": "有效期",
+        "value": "7 天"
+      },
+      {
+        "label": "Base64",
+        "value": "未使用"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/creation/images/20260710/021783657724801831aa2c3f6dc2e82214a35999678cd03183dae_0.png"
+      }
+    ],
+    "assertions": [
+      "参考素材进入临时 OSS 对象。",
+      "临时素材有效期为 7 天。",
+      "请求体使用 URL 引用，未携带 base64 图片。"
+    ],
+    "counts": {
+      "screenshots": 4,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "_media/creation/images/20260710/021783657724801831aa2c3f6dc2e82214a35999678cd03183dae_0.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrefr4c4-real-img2img-upload-ref/",
+    "assetBytes": 378119
+  },
+  {
+    "slug": "mrefv5tx-chat-mcp-edit_image",
+    "sourceReport": "evidence-report-mrefv5tx-chat-mcp-edit_image",
+    "runId": "mrefv5tx",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrefv5tx"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生图"
+      },
+      {
+        "label": "截图",
+        "value": 6
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "workspace",
+        "value": "workspace/uploads/images/e2e-mcp-ref-mrefv5tx.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。"
+    ],
+    "counts": {
+      "screenshots": 6,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "workspace/uploads/images/e2e-mcp-ref-mrefv5tx.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrefv5tx-chat-mcp-edit_image/",
+    "assetBytes": 1326483
+  },
+  {
+    "slug": "mreghxl7-chat-mcp-edit_image",
+    "sourceReport": "evidence-report-mreghxl7-chat-mcp-edit_image",
+    "runId": "mreghxl7",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mreghxl7"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生图"
+      },
+      {
+        "label": "截图",
+        "value": 6
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "workspace",
+        "value": "workspace/uploads/images/e2e-mcp-ref-mreghxl7.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。"
+    ],
+    "counts": {
+      "screenshots": 6,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "workspace/uploads/images/e2e-mcp-ref-mreghxl7.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mreghxl7-chat-mcp-edit_image/",
+    "assetBytes": 1506721
+  },
+  {
+    "slug": "mreh66iz-chat-mcp-edit_image",
+    "sourceReport": "evidence-report-mreh66iz-chat-mcp-edit_image",
+    "runId": "mreh66iz",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mreh66iz"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生图"
+      },
+      {
+        "label": "截图",
+        "value": 6
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "workspace",
+        "value": "workspace/uploads/images/e2e-mcp-ref-mreh66iz.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。"
+    ],
+    "counts": {
+      "screenshots": 6,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "workspace/uploads/images/e2e-mcp-ref-mreh66iz.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mreh66iz-chat-mcp-edit_image/",
+    "assetBytes": 1992661
+  },
+  {
+    "slug": "mrehnhzk-chat-mcp-edit_image",
+    "sourceReport": "evidence-report-mrehnhzk-chat-mcp-edit_image",
+    "runId": "mrehnhzk",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生图",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrehnhzk"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生图"
+      },
+      {
+        "label": "截图",
+        "value": 8
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "工具",
+        "value": "edit_image"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/chat/images/20260710/02178366093343998c470d32e326dd7109413e831d170d88be6d1_0.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。",
+      "MCP 生成结果进入 workspace。"
+    ],
+    "counts": {
+      "screenshots": 8,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "_media/chat/images/20260710/02178366093343998c470d32e326dd7109413e831d170d88be6d1_0.png",
+      "workspace/uploads/images/e2e-mcp-ref-mrehnhzk.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrehnhzk-chat-mcp-edit_image/",
+    "assetBytes": 653342
+  },
+  {
+    "slug": "mrehze0z-chat-mcp-create_video",
+    "sourceReport": "evidence-report-mrehze0z-chat-mcp-create_video",
+    "runId": "mrehze0z",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生视频",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrehze0z"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生视频"
+      },
+      {
+        "label": "截图",
+        "value": 7
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "workspace",
+        "value": "workspace/uploads/images/e2e-mcp-ref-mrehze0z.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。"
+    ],
+    "counts": {
+      "screenshots": 7,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "workspace/uploads/images/e2e-mcp-ref-mrehze0z.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrehze0z-chat-mcp-create_video/",
+    "assetBytes": 1265734
+  },
+  {
+    "slug": "mrei8qqt-chat-mcp-create_video",
+    "sourceReport": "evidence-report-mrei8qqt-chat-mcp-create_video",
+    "runId": "mrei8qqt",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生视频",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mrei8qqt"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生视频"
+      },
+      {
+        "label": "截图",
+        "value": 7
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "workspace",
+        "value": "workspace/uploads/images/e2e-mcp-ref-mrei8qqt.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。"
+    ],
+    "counts": {
+      "screenshots": 7,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "workspace/uploads/images/e2e-mcp-ref-mrei8qqt.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mrei8qqt-chat-mcp-create_video/",
+    "assetBytes": 927056
+  },
+  {
+    "slug": "mreid7nd-chat-mcp-create_video",
+    "sourceReport": "evidence-report-mreid7nd-chat-mcp-create_video",
+    "runId": "mreid7nd",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生视频",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mreid7nd"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生视频"
+      },
+      {
+        "label": "截图",
+        "value": 7
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "workspace",
+        "value": "workspace/uploads/images/e2e-mcp-ref-mreid7nd.png"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。"
+    ],
+    "counts": {
+      "screenshots": 7,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "workspace/uploads/images/e2e-mcp-ref-mreid7nd.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mreid7nd-chat-mcp-create_video/",
+    "assetBytes": 816993
+  },
+  {
+    "slug": "mreihz4p-chat-mcp-create_video",
+    "sourceReport": "evidence-report-mreihz4p-chat-mcp-create_video",
+    "runId": "mreihz4p",
+    "class": "真实页面 E2E",
+    "scenario": "聊天 MCP 图生视频",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mreihz4p"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E"
+      },
+      {
+        "label": "场景",
+        "value": "聊天 MCP 图生视频"
+      },
+      {
+        "label": "截图",
+        "value": 10
+      },
+      {
+        "label": "录屏",
+        "value": "1 个 MP4"
+      },
+      {
+        "label": "上传目录",
+        "value": "workspace/uploads/images"
+      },
+      {
+        "label": "工具",
+        "value": "create_video"
+      },
+      {
+        "label": "workspace",
+        "value": "_media/chat/videos/20260710/02178366259438300000000000000000000ffffac14f38723cd52.mp4"
+      }
+    ],
+    "assertions": [
+      "聊天上传附件进入 workspace/uploads/images。",
+      "刷新重进后，聊天附件仍可见。",
+      "MCP 生成结果进入 workspace。",
+      "workspace 预览视频可播放，duration=10.053991，1280x720。"
+    ],
+    "counts": {
+      "screenshots": 10,
+      "videos": 1
+    },
+    "workspacePaths": [
+      "_media/chat/videos/20260710/02178366259438300000000000000000000ffffac14f38723cd52.mp4",
+      "workspace/uploads/images/e2e-mcp-ref-mreihz4p.png"
+    ],
+    "redaction": [
+      "未发布原始 network / WS / multipart 数据。",
+      "未发布访问凭证、个人标识、会话标识、容器标识。",
+      "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+    ],
+    "href": "reports/mreihz4p-chat-mcp-create_video/",
+    "assetBytes": 2212322
+  }
+]

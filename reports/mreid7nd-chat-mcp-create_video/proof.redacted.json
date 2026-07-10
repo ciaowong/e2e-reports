@@ -1,0 +1,53 @@
+{
+  "slug": "mreid7nd-chat-mcp-create_video",
+  "sourceReport": "evidence-report-mreid7nd-chat-mcp-create_video",
+  "runId": "mreid7nd",
+  "class": "真实页面 E2E",
+  "scenario": "聊天 MCP 图生视频",
+  "facts": [
+    {
+      "label": "Run ID",
+      "value": "mreid7nd"
+    },
+    {
+      "label": "类型",
+      "value": "真实页面 E2E"
+    },
+    {
+      "label": "场景",
+      "value": "聊天 MCP 图生视频"
+    },
+    {
+      "label": "截图",
+      "value": 7
+    },
+    {
+      "label": "录屏",
+      "value": "1 个 MP4"
+    },
+    {
+      "label": "上传目录",
+      "value": "workspace/uploads/images"
+    },
+    {
+      "label": "workspace",
+      "value": "workspace/uploads/images/e2e-mcp-ref-mreid7nd.png"
+    }
+  ],
+  "assertions": [
+    "聊天上传附件进入 workspace/uploads/images。",
+    "刷新重进后，聊天附件仍可见。"
+  ],
+  "counts": {
+    "screenshots": 7,
+    "videos": 1
+  },
+  "workspacePaths": [
+    "workspace/uploads/images/e2e-mcp-ref-mreid7nd.png"
+  ],
+  "redaction": [
+    "未发布原始 network / WS / multipart 数据。",
+    "未发布访问凭证、个人标识、会话标识、容器标识。",
+    "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+  ]
+}

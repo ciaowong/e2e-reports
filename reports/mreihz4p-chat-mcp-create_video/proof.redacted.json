@@ -1,0 +1,60 @@
+{
+  "slug": "mreihz4p-chat-mcp-create_video",
+  "sourceReport": "evidence-report-mreihz4p-chat-mcp-create_video",
+  "runId": "mreihz4p",
+  "class": "真实页面 E2E",
+  "scenario": "聊天 MCP 图生视频",
+  "facts": [
+    {
+      "label": "Run ID",
+      "value": "mreihz4p"
+    },
+    {
+      "label": "类型",
+      "value": "真实页面 E2E"
+    },
+    {
+      "label": "场景",
+      "value": "聊天 MCP 图生视频"
+    },
+    {
+      "label": "截图",
+      "value": 10
+    },
+    {
+      "label": "录屏",
+      "value": "1 个 MP4"
+    },
+    {
+      "label": "上传目录",
+      "value": "workspace/uploads/images"
+    },
+    {
+      "label": "工具",
+      "value": "create_video"
+    },
+    {
+      "label": "workspace",
+      "value": "_media/chat/videos/20260710/02178366259438300000000000000000000ffffac14f38723cd52.mp4"
+    }
+  ],
+  "assertions": [
+    "聊天上传附件进入 workspace/uploads/images。",
+    "刷新重进后，聊天附件仍可见。",
+    "MCP 生成结果进入 workspace。",
+    "workspace 预览视频可播放，duration=10.053991，1280x720。"
+  ],
+  "counts": {
+    "screenshots": 10,
+    "videos": 1
+  },
+  "workspacePaths": [
+    "_media/chat/videos/20260710/02178366259438300000000000000000000ffffac14f38723cd52.mp4",
+    "workspace/uploads/images/e2e-mcp-ref-mreihz4p.png"
+  ],
+  "redaction": [
+    "未发布原始 network / WS / multipart 数据。",
+    "未发布访问凭证、个人标识、会话标识、容器标识。",
+    "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
+  ]
+}

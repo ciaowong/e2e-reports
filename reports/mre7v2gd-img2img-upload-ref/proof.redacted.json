@@ -1,13 +1,13 @@
 {
-  "slug": "mre6w00k-img2img-upload-ref",
-  "sourceReport": "evidence-report-mre6w00k-img2img-upload-ref",
-  "runId": "mre6w00k",
+  "slug": "mre7v2gd-img2img-upload-ref",
+  "sourceReport": "evidence-report-mre7v2gd-img2img-upload-ref",
+  "runId": "mre7v2gd",
   "class": "mock 页面 E2E",
   "scenario": "图生图参考图上传",
   "facts": [
     {
       "label": "Run ID",
-      "value": "mre6w00k"
+      "value": "mre7v2gd"
     },
     {
       "label": "类型",
@@ -54,7 +54,5 @@
     "未发布原始 network / WS / multipart 数据。",
     "未发布访问凭证、个人标识、会话标识、容器标识。",
     "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
-  ],
-  "href": "reports/mre6w00k-img2img-upload-ref/",
-  "assetBytes": 132640
+  ]
 }

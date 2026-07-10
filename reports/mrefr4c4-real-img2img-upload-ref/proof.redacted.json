@@ -1,29 +1,33 @@
 {
-  "slug": "mre6w00k-img2img-upload-ref",
-  "sourceReport": "evidence-report-mre6w00k-img2img-upload-ref",
-  "runId": "mre6w00k",
-  "class": "mock 页面 E2E",
-  "scenario": "图生图参考图上传",
+  "slug": "mrefr4c4-real-img2img-upload-ref",
+  "sourceReport": "evidence-report-mrefr4c4-real-img2img-upload-ref",
+  "runId": "mrefr4c4",
+  "class": "真实页面 E2E",
+  "scenario": "真实创作页图生图",
   "facts": [
     {
       "label": "Run ID",
-      "value": "mre6w00k"
+      "value": "mrefr4c4"
     },
     {
       "label": "类型",
-      "value": "mock 页面 E2E"
+      "value": "真实页面 E2E"
     },
     {
       "label": "场景",
-      "value": "图生图参考图上传"
+      "value": "真实创作页图生图"
     },
     {
       "label": "截图",
-      "value": 3
+      "value": 4
+    },
+    {
+      "label": "录屏",
+      "value": "1 个 MP4"
     },
     {
       "label": "临时素材",
-      "value": "temp/media-refs/20260710/user-1/ref.png"
+      "value": "temp/media-refs/20260710/80887198-50b4-41ae-a041-9227897ccd4e/1783657724161-6mnv3arz.png"
     },
     {
       "label": "有效期",
@@ -35,7 +39,7 @@
     },
     {
       "label": "workspace",
-      "value": "_media/creation/images/20260710/result.png"
+      "value": "_media/creation/images/20260710/021783657724801831aa2c3f6dc2e82214a35999678cd03183dae_0.png"
     }
   ],
   "assertions": [
@@ -44,17 +48,15 @@
     "请求体使用 URL 引用，未携带 base64 图片。"
   ],
   "counts": {
-    "screenshots": 3,
-    "videos": 0
+    "screenshots": 4,
+    "videos": 1
   },
   "workspacePaths": [
-    "_media/creation/images/20260710/result.png"
+    "_media/creation/images/20260710/021783657724801831aa2c3f6dc2e82214a35999678cd03183dae_0.png"
   ],
   "redaction": [
     "未发布原始 network / WS / multipart 数据。",
     "未发布访问凭证、个人标识、会话标识、容器标识。",
     "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
-  ],
-  "href": "reports/mre6w00k-img2img-upload-ref/",
-  "assetBytes": 132640
+  ]
 }

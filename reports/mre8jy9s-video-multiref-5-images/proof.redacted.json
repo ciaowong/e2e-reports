@@ -1,13 +1,13 @@
 {
-  "slug": "mre6w00k-img2img-upload-ref",
-  "sourceReport": "evidence-report-mre6w00k-img2img-upload-ref",
-  "runId": "mre6w00k",
+  "slug": "mre8jy9s-video-multiref-5-images",
+  "sourceReport": "evidence-report-mre8jy9s-video-multiref-5-images",
+  "runId": "mre8jy9s",
   "class": "mock 页面 E2E",
-  "scenario": "图生图参考图上传",
+  "scenario": "图生视频多参考图",
   "facts": [
     {
       "label": "Run ID",
-      "value": "mre6w00k"
+      "value": "mre8jy9s"
     },
     {
       "label": "类型",
@@ -15,7 +15,7 @@
     },
     {
       "label": "场景",
-      "value": "图生图参考图上传"
+      "value": "图生视频多参考图"
     },
     {
       "label": "截图",
@@ -23,7 +23,7 @@
     },
     {
       "label": "临时素材",
-      "value": "temp/media-refs/20260710/user-1/ref.png"
+      "value": "temp/media-refs/20260709/e2e-media-video/e2e-image-1.png"
     },
     {
       "label": "有效期",
@@ -32,10 +32,6 @@
     {
       "label": "Base64",
       "value": "未使用"
-    },
-    {
-      "label": "workspace",
-      "value": "_media/creation/images/20260710/result.png"
     }
   ],
   "assertions": [
@@ -47,14 +43,10 @@
     "screenshots": 3,
     "videos": 0
   },
-  "workspacePaths": [
-    "_media/creation/images/20260710/result.png"
-  ],
+  "workspacePaths": [],
   "redaction": [
     "未发布原始 network / WS / multipart 数据。",
     "未发布访问凭证、个人标识、会话标识、容器标识。",
     "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
-  ],
-  "href": "reports/mre6w00k-img2img-upload-ref/",
-  "assetBytes": 132640
+  ]
 }

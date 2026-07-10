@@ -54,7 +54,5 @@
     "未发布原始 network / WS / multipart 数据。",
     "未发布访问凭证、个人标识、会话标识、容器标识。",
     "页面只保留截图、MP4 录屏和可公开 proof 摘要。"
-  ],
-  "href": "reports/mre6w00k-img2img-upload-ref/",
-  "assetBytes": 132640
+  ]
 }
