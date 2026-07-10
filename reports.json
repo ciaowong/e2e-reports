@@ -1,5 +1,61 @@
 [
   {
+    "slug": "mmretaxnd-current-auth-login-real-failed",
+    "sourceReport": "evidence-report-mmretaxnd-current-auth-login-real-failed",
+    "runId": "mmretaxnd",
+    "class": "真实页面 E2E（失败）",
+    "scenario": "登录后进入聊天页",
+    "facts": [
+      {
+        "label": "Run ID",
+        "value": "mmretaxnd"
+      },
+      {
+        "label": "类型",
+        "value": "真实页面 E2E（失败）"
+      },
+      {
+        "label": "场景",
+        "value": "登录后进入聊天页"
+      },
+      {
+        "label": "截图",
+        "value": 2
+      },
+      {
+        "label": "阻塞点",
+        "value": "/api/runtime/slot 返回 409"
+      },
+      {
+        "label": "页面提示",
+        "value": "当前资源已满"
+      },
+      {
+        "label": "公开脱敏",
+        "value": "已处理"
+      }
+    ],
+    "assertions": [
+      "auth.html 可打开。",
+      "短信发送接口返回 200。",
+      "短信登录接口返回 200。",
+      "onboarding/check-user 返回 200。",
+      "runtime/slot 未返回预期 200，实际阻塞在资源满页面。"
+    ],
+    "counts": {
+      "screenshots": 2,
+      "videos": 0
+    },
+    "workspacePaths": [],
+    "redaction": [
+      "未发布 trace、登录录屏、验证码截图、短信截图。",
+      "未发布手机号、验证码、captcha payload、token 或响应正文。",
+      "公开 network 证据只保留 request/response 状态。"
+    ],
+    "href": "reports/mmretaxnd-current-auth-login-real-failed/",
+    "assetBytes": 115425
+  },
+  {
     "slug": "mre6w00k-img2img-upload-ref",
     "sourceReport": "evidence-report-mre6w00k-img2img-upload-ref",
     "runId": "mre6w00k",

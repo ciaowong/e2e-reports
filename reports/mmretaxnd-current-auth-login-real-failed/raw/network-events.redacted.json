@@ -1,0 +1,60 @@
+{
+  "phone": "166****7929",
+  "events": [
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/captcha/image"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/captcha/image"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/captcha/image"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/captcha/image"
+    },
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/sms/send"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/sms/send"
+    },
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/sms/login"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-identity/api/v1/auth/sms/login"
+    },
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/onboarding/check-user"
+    },
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/runtime/slot"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/onboarding/check-user"
+    }
+  ]
+}
