@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>媒体存储 E2E 报告</title>
+  <title>iBoxClaw 自动化测试</title>
   <style>
     :root {
       color-scheme: light;
@@ -37,42 +37,76 @@
       line-height: 1.05;
       letter-spacing: 0;
     }
-    h2 {
-      margin: 30px 0 10px;
-      font-size: 22px;
-      line-height: 1.25;
-      letter-spacing: 0;
-    }
-    h3 {
-      margin: 16px 0 10px;
-      color: var(--muted);
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0;
-    }
     a {
       color: var(--accent);
       text-decoration: none;
     }
-    .feature {
-      padding: 2px 0 8px;
+    details {
       border-bottom: 1px solid var(--line);
+    }
+    details details {
+      margin-left: 18px;
+      border-bottom: 0;
+      border-left: 1px solid var(--line);
+    }
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      min-height: 48px;
+      padding: 12px 0;
+      cursor: pointer;
+      font-weight: 800;
+      list-style: none;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+    details[open] > summary::after {
+      content: "-";
+    }
+    .level-1 > summary {
+      font-size: 22px;
+    }
+    .level-2 > summary {
+      color: var(--ink);
+      font-size: 18px;
+      padding-left: 14px;
+    }
+    .level-3 > summary {
+      color: var(--muted);
+      font-size: 15px;
+      padding-left: 14px;
     }
     .report-list {
       display: grid;
       gap: 10px;
-      margin: 0 0 14px;
+      margin: 0 0 16px 14px;
+      padding: 0 0 4px;
     }
     .report-link {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 12px;
       align-items: center;
-      padding: 13px 14px;
+      padding: 12px 14px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
       overflow-wrap: anywhere;
     }
@@ -84,6 +118,9 @@
       white-space: nowrap;
     }
     @media (max-width: 560px) {
+      details details {
+        margin-left: 10px;
+      }
       .report-link {
         grid-template-columns: 1fr;
         gap: 4px;
@@ -98,71 +135,89 @@
 <body>
   <main>
     <header>
-      <h1>媒体存储 E2E 报告</h1>
+      <h1>iBoxClaw 自动化测试</h1>
     </header>
 
-    <section class="feature" id="current-chat-reply-real">
-      <h2>真实聊天回复基线</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/">
-          <strong>移动端聊天回复基线</strong>
-          <time datetime="2026-07-10T21:22:19+08:00">新增 21:22:19</time>
-        </a>
-        <a class="report-link" href="reports/2026-07-10-current-chat-reply-real/">
-          <strong>真实聊天回复基线</strong>
-          <span>历史报告</span>
-        </a>
-      </div>
-    </section>
+    <details class="level-1">
+      <summary>P0 基线回归</summary>
 
-    <section class="feature" id="current-auth-login-real">
-      <h2>真实登录基线</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/">
-          <strong>移动端登录基线</strong>
-          <time datetime="2026-07-10T21:21:46+08:00">新增 21:21:46</time>
-        </a>
-        <a class="report-link" href="reports/2026-07-10-current-auth-login-real/">
-          <strong>真实登录基线</strong>
-          <span>历史报告</span>
-        </a>
-      </div>
-    </section>
+      <details class="level-2">
+        <summary>登录</summary>
+        <details class="level-3">
+          <summary>2026-07-10</summary>
+          <div class="report-list">
+            <a class="report-link" href="reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/">
+              <strong>移动端登录基线</strong>
+              <time datetime="2026-07-10T21:21:46+08:00">新增 21:21:46</time>
+            </a>
+            <a class="report-link" href="reports/2026-07-10-current-auth-login-real/">
+              <strong>真实登录基线</strong>
+              <span>历史报告</span>
+            </a>
+          </div>
+        </details>
+      </details>
 
-    <section class="feature" id="chat-mcp-video">
-      <h2>聊天 MCP 图生视频</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/report-04/"><strong>报告 04</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-03/"><strong>报告 03</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-02/"><strong>报告 02</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-01/"><strong>报告 01</strong><span>历史报告</span></a>
-      </div>
-    </section>
+      <details class="level-2">
+        <summary>聊天</summary>
+        <details class="level-3">
+          <summary>2026-07-10</summary>
+          <div class="report-list">
+            <a class="report-link" href="reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/">
+              <strong>移动端聊天回复基线</strong>
+              <time datetime="2026-07-10T21:22:19+08:00">新增 21:22:19</time>
+            </a>
+            <a class="report-link" href="reports/2026-07-10-current-chat-reply-real/">
+              <strong>真实聊天回复基线</strong>
+              <span>历史报告</span>
+            </a>
+          </div>
+        </details>
+      </details>
+    </details>
 
-    <section class="feature" id="chat-mcp-image">
-      <h2>聊天 MCP 图生图</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/report-08/"><strong>报告 08</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-07/"><strong>报告 07</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-06/"><strong>报告 06</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-05/"><strong>报告 05</strong><span>历史报告</span></a>
-      </div>
-    </section>
+    <details class="level-1">
+      <summary>P1 媒体能力</summary>
 
-    <section class="feature" id="workspace-image">
-      <h2>真实创作页图生图</h2>
-      <h3>2026-07-10</h3>
-      <div class="report-list">
-        <a class="report-link" href="reports/report-12/"><strong>报告 12</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-11/"><strong>报告 11</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-10/"><strong>报告 10</strong><span>历史报告</span></a>
-        <a class="report-link" href="reports/report-09/"><strong>报告 09</strong><span>历史报告</span></a>
-      </div>
-    </section>
+      <details class="level-2">
+        <summary>聊天 MCP 图生视频</summary>
+        <details class="level-3">
+          <summary>2026-07-10</summary>
+          <div class="report-list">
+            <a class="report-link" href="reports/report-04/"><strong>报告 04</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-03/"><strong>报告 03</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-02/"><strong>报告 02</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-01/"><strong>报告 01</strong><span>历史报告</span></a>
+          </div>
+        </details>
+      </details>
+
+      <details class="level-2">
+        <summary>聊天 MCP 图生图</summary>
+        <details class="level-3">
+          <summary>2026-07-10</summary>
+          <div class="report-list">
+            <a class="report-link" href="reports/report-08/"><strong>报告 08</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-07/"><strong>报告 07</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-06/"><strong>报告 06</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-05/"><strong>报告 05</strong><span>历史报告</span></a>
+          </div>
+        </details>
+      </details>
+
+      <details class="level-2">
+        <summary>真实创作页图生图</summary>
+        <details class="level-3">
+          <summary>2026-07-10</summary>
+          <div class="report-list">
+            <a class="report-link" href="reports/report-12/"><strong>报告 12</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-11/"><strong>报告 11</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-10/"><strong>报告 10</strong><span>历史报告</span></a>
+            <a class="report-link" href="reports/report-09/"><strong>报告 09</strong><span>历史报告</span></a>
+          </div>
+        </details>
+      </details>
+    </details>
   </main>
 </body>
 </html>
