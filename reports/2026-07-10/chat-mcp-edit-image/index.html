@@ -7,37 +7,60 @@
   <style>
     :root {
       color-scheme: light;
-      --bg: #f7f7f6;
-      --ink: #181818;
-      --muted: #6a6f76;
-      --line: #dedede;
-      --panel: #fff;
+      --page: #f6f7f9;
+      --panel: #ffffff;
+      --panel-soft: #fbfcfe;
+      --ink: #171a21;
+      --muted: #646d7b;
+      --line: #e1e6ef;
+      --line-strong: #cfd7e5;
       --ok: #157f4f;
       --warn: #a44900;
-      --accent: #155eef;
+      --accent: #285cc8;
+      --accent-soft: #eef4ff;
+      --orange: #e96f1c;
+      --orange-soft: #fff3ea;
+      --teal: #0f7f6d;
+      --teal-soft: #eaf8f5;
+      --shadow: 0 10px 28px rgba(23, 26, 33, 0.08);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: var(--bg);
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffffff 0, #ffffff 136px, var(--page) 136px);
+      background-color: var(--page);
+      background-repeat: no-repeat;
       color: var(--ink);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
     }
     main {
-      max-width: 1040px;
+      width: min(1080px, 100%);
       margin: 0 auto;
-      padding: 18px clamp(14px, 4vw, 28px) 42px;
+      padding: 28px 28px 56px;
     }
     header {
       padding: 6px 0 16px;
       border-bottom: 1px solid var(--line);
     }
+    .page-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 6px 0 26px;
+      border-bottom: 0;
+    }
     h1 {
       margin: 8px 0 0;
-      font-size: clamp(28px, 8vw, 44px);
+      font-size: 34px;
       line-height: 1.05;
       letter-spacing: 0;
+      font-weight: 850;
+    }
+    .page-head h1 {
+      margin: 0;
     }
     h2 {
       margin: 30px 0 12px;
@@ -60,6 +83,24 @@
     .subtitle, .group-heading p, .note {
       color: var(--muted);
       overflow-wrap: anywhere;
+    }
+    .brand-tile {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #f2c39d;
+      border-radius: 8px;
+      background: var(--orange-soft);
+      color: var(--orange);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+    .catalog {
+      display: grid;
+      gap: 14px;
     }
     .metrics {
       display: grid;
@@ -120,6 +161,201 @@
       background: #fff3e8;
       font-weight: 700;
     }
+    details {
+      background: transparent;
+    }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(40, 92, 200, 0.24);
+      outline-offset: 3px;
+    }
+    .module {
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .module-summary,
+    .feature-summary,
+    .date-summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 16px;
+    }
+    .module-summary {
+      min-height: 72px;
+      padding: 0 18px;
+      border-left: 5px solid var(--orange);
+    }
+    .module.p1 .module-summary {
+      border-left-color: var(--teal);
+    }
+    .summary-main {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    .tier {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      height: 26px;
+      border: 1px solid #f1c7a5;
+      border-radius: 999px;
+      background: var(--orange-soft);
+      color: #9f4300;
+      font-size: 12px;
+      font-weight: 850;
+      line-height: 1;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .module.p1 .tier {
+      border-color: #b8e2db;
+      background: var(--teal-soft);
+      color: #086354;
+    }
+    .summary-text {
+      min-width: 0;
+      display: grid;
+      gap: 2px;
+    }
+    .module-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 19px;
+      font-weight: 850;
+    }
+    .module-subtitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .summary-side {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .chevron {
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(-45deg);
+      transition: transform 0.16s ease;
+    }
+    details[open] > summary .chevron {
+      transform: rotate(45deg);
+    }
+    .module-body {
+      border-top: 1px solid var(--line);
+      background: var(--panel-soft);
+      padding: 8px 12px 14px;
+    }
+    .feature + .feature {
+      border-top: 1px solid var(--line);
+    }
+    .feature-summary {
+      min-height: 52px;
+      padding: 0 6px 0 10px;
+      border-radius: 8px;
+    }
+    .feature-summary:hover,
+    .date-summary:hover {
+      background: #ffffff;
+    }
+    .feature-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      font-size: 15px;
+      font-weight: 800;
+    }
+    .feature-name::before {
+      content: "";
+      width: 6px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--accent);
+      flex: 0 0 auto;
+    }
+    .feature.media .feature-name::before {
+      background: var(--teal);
+    }
+    .date {
+      margin-left: 16px;
+      border-left: 1px solid var(--line);
+    }
+    .date-summary {
+      min-height: 44px;
+      padding: 0 8px 0 16px;
+      color: var(--muted);
+      border-radius: 0 8px 8px 0;
+      font-size: 14px;
+      font-weight: 750;
+    }
+    .module-body .report-list {
+      gap: 8px;
+      margin: 0 0 14px 16px;
+      padding: 2px 0 0 16px;
+      border-left: 1px solid var(--line);
+    }
+    .report-link {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      min-height: 46px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .report-link:hover {
+      border-color: #b7c8ee;
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+    span.report-link:hover {
+      border-color: var(--line);
+      background: #ffffff;
+    }
+    .report-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 780;
+    }
+    .report-meta {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
     figure {
       margin: 0 0 16px;
       border: 1px solid var(--line);
@@ -139,24 +375,75 @@
       font-size: 14px;
       border-top: 1px solid var(--line);
     }
-    details {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--panel);
-      padding: 0 12px;
-    }
-    summary {
-      min-height: 44px;
-      padding: 12px 0;
-      cursor: pointer;
-      font-weight: 700;
-    }
     @media (min-width: 760px) {
       .metrics {
         grid-template-columns: repeat(4, minmax(0, 1fr));
       }
       .report-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .module-body .report-list {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 720px) {
+      body {
+        background: linear-gradient(180deg, #ffffff 0, #ffffff 112px, var(--page) 112px);
+        background-color: var(--page);
+        background-repeat: no-repeat;
+      }
+      main {
+        padding: 18px 14px 40px;
+      }
+      .page-head {
+        padding-bottom: 18px;
+      }
+      h1 {
+        font-size: 27px;
+      }
+      .brand-tile {
+        width: 38px;
+        height: 38px;
+      }
+      .module-summary {
+        min-height: 66px;
+        padding-right: 14px;
+      }
+      .summary-main {
+        gap: 9px;
+      }
+      .tier {
+        min-width: 34px;
+        height: 24px;
+      }
+      .module-title {
+        font-size: 17px;
+      }
+      .module-subtitle,
+      .summary-side .count {
+        display: none;
+      }
+      .module-body {
+        padding: 6px 8px 10px;
+      }
+      .feature-summary {
+        min-height: 48px;
+        padding-left: 6px;
+      }
+      .date {
+        margin-left: 10px;
+      }
+      .module-body .report-list {
+        margin-left: 10px;
+        padding-left: 10px;
+      }
+      .report-link {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+      .report-title {
+        white-space: normal;
+        overflow-wrap: anywhere;
       }
     }
   </style>
@@ -170,9 +457,9 @@
         <p class="subtitle">2026-07-10 上传，按上传时间倒序。</p>
       </header>
       <div class="metrics">
-        <article class="metric"><span>报告</span><strong>4</strong></article>
-        <article class="metric"><span>录屏</span><strong>4</strong></article>
-        <article class="metric"><span>截图</span><strong>26</strong></article>
+        <article class="metric"><span>报告</span><strong>1</strong></article>
+        <article class="metric"><span>录屏</span><strong>1</strong></article>
+        <article class="metric"><span>截图</span><strong>8</strong></article>
         <article class="metric"><span>门禁</span><strong>录屏齐全</strong></article>
       </div>
       <div class="report-list">
@@ -182,39 +469,6 @@
         <div class="badges">
           <span class="badge">聊天 MCP 图生图</span>
           <span class="badge">截图 8</span>
-          <span class="badge ok">录屏 1</span>
-        </div>
-      </article>
-
-
-      <article class="report-card">
-        <h2><a href="mreh66iz-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
-        <p>evidence-report-mreh66iz-chat-mcp-edit_image</p>
-        <div class="badges">
-          <span class="badge">聊天 MCP 图生图</span>
-          <span class="badge">截图 6</span>
-          <span class="badge ok">录屏 1</span>
-        </div>
-      </article>
-
-
-      <article class="report-card">
-        <h2><a href="mreghxl7-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
-        <p>evidence-report-mreghxl7-chat-mcp-edit_image</p>
-        <div class="badges">
-          <span class="badge">聊天 MCP 图生图</span>
-          <span class="badge">截图 6</span>
-          <span class="badge ok">录屏 1</span>
-        </div>
-      </article>
-
-
-      <article class="report-card">
-        <h2><a href="mrefv5tx-chat-mcp-edit_image/">聊天 MCP 图生图</a></h2>
-        <p>evidence-report-mrefv5tx-chat-mcp-edit_image</p>
-        <div class="badges">
-          <span class="badge">聊天 MCP 图生图</span>
-          <span class="badge">截图 6</span>
           <span class="badge ok">录屏 1</span>
         </div>
       </article>
