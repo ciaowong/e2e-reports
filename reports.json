@@ -1,11 +1,59 @@
 {
-  "generatedAt": "2026-07-11T00:51:43+00:00",
+  "generatedAt": "2026-07-11T01:06:16+00:00",
   "policy": {
     "recordingRequired": true,
     "missingRecordingDisposition": "rerun",
     "layout": "reports/<upload-date>/<feature>/<run>/"
   },
   "reports": [
+    {
+      "slug": "mrfnvm1z-real-img2img-upload-ref",
+      "title": "真实创作页图生图",
+      "href": "reports/2026-07-11/creation-img2img/mrfnvm1z-real-img2img-upload-ref/",
+      "sourceReport": "evidence-report-mrfnvm1z-real-img2img-upload-ref",
+      "uploadedAt": "2026-07-11T09:05:18+08:00",
+      "uploadedTimestamp": 1783731918.252677,
+      "uploadedDate": "2026-07-11",
+      "category": {
+        "slug": "creation-img2img",
+        "label": "创作页图生图",
+        "sort": 40
+      },
+      "screenshots": 4,
+      "videos": 1
+    },
+    {
+      "slug": "mrfnm85u-video-multiref-5-images",
+      "title": "图生视频多参考图",
+      "href": "reports/2026-07-11/creation-video-multiref/mrfnm85u-video-multiref-5-images/",
+      "sourceReport": "evidence-report-mrfnm85u-video-multiref-5-images",
+      "uploadedAt": "2026-07-11T08:56:44+08:00",
+      "uploadedTimestamp": 1783731404.649883,
+      "uploadedDate": "2026-07-11",
+      "category": {
+        "slug": "creation-video-multiref",
+        "label": "创作页图生视频",
+        "sort": 30
+      },
+      "screenshots": 3,
+      "videos": 1
+    },
+    {
+      "slug": "mrfnkwg7-img2img-upload-ref",
+      "title": "图生图参考图上传",
+      "href": "reports/2026-07-11/creation-img2img/mrfnkwg7-img2img-upload-ref/",
+      "sourceReport": "evidence-report-mrfnkwg7-img2img-upload-ref",
+      "uploadedAt": "2026-07-11T08:55:40+08:00",
+      "uploadedTimestamp": 1783731340.418645,
+      "uploadedDate": "2026-07-11",
+      "category": {
+        "slug": "creation-img2img",
+        "label": "创作页图生图",
+        "sort": 40
+      },
+      "screenshots": 3,
+      "videos": 1
+    },
     {
       "slug": "mreihz4p-chat-mcp-create_video",
       "title": "聊天 MCP 图生视频",
@@ -37,36 +85,9 @@
       },
       "screenshots": 8,
       "videos": 1
-    },
-    {
-      "slug": "mrefr4c4-real-img2img-upload-ref",
-      "title": "真实创作页图生图",
-      "href": "reports/2026-07-10/creation-img2img/mrefr4c4-real-img2img-upload-ref/",
-      "sourceReport": "evidence-report-mrefr4c4-real-img2img-upload-ref",
-      "uploadedAt": "2026-07-10T15:22:07+08:00",
-      "uploadedTimestamp": 1783668127.499766,
-      "uploadedDate": "2026-07-10",
-      "category": {
-        "slug": "creation-img2img",
-        "label": "创作页图生图",
-        "sort": 40
-      },
-      "screenshots": 4,
-      "videos": 1
     }
   ],
-  "skipped": [
-    {
-      "sourceReport": "evidence-report-mre900ez-video-multiref-5-images",
-      "title": "图生视频多参考图",
-      "reason": "缺录屏"
-    },
-    {
-      "sourceReport": "evidence-report-mre8zv6c-img2img-upload-ref",
-      "title": "图生图参考图上传",
-      "reason": "缺录屏"
-    }
-  ],
+  "skipped": [],
   "existingReports": [
     {
       "href": "reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/",
