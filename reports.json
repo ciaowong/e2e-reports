@@ -1,11 +1,27 @@
 {
-  "generatedAt": "2026-07-11T01:06:16+00:00",
+  "generatedAt": "2026-07-12T01:58:20+00:00",
   "policy": {
     "recordingRequired": true,
     "missingRecordingDisposition": "rerun",
     "layout": "reports/<upload-date>/<feature>/<run>/"
   },
   "reports": [
+    {
+      "slug": "mrgl0iif-p0-baseline",
+      "title": "P0 基线回归",
+      "href": "reports/2026-07-12/p0-baseline/mrgl0iif-p0-baseline/",
+      "sourceReport": "evidence-report-mrgkygbh-auth-login-real + evidence-report-mrgl0iif-chat-reply",
+      "uploadedAt": "2026-07-12T00:31:45+08:00",
+      "uploadedTimestamp": 1783787505,
+      "uploadedDate": "2026-07-12",
+      "category": {
+        "slug": "p0-baseline",
+        "label": "P0 基线回归",
+        "sort": 0
+      },
+      "screenshots": 8,
+      "videos": 2
+    },
     {
       "slug": "mrfnvm1z-real-img2img-upload-ref",
       "title": "真实创作页图生图",

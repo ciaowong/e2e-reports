@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>P0 基线回归 - 2026-07-12</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f6f7f9;
+      --panel: #ffffff;
+      --ink: #171a21;
+      --muted: #646d7b;
+      --line: #e1e6ef;
+      --ok: #157f4f;
+      --accent: #285cc8;
+      --shadow: 0 10px 28px rgba(23, 26, 33, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffffff 0, #ffffff 136px, var(--page) 136px);
+      background-color: var(--page);
+      background-repeat: no-repeat;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 28px 28px 56px;
+    }
+    header {
+      padding: 6px 0 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 8px 0 0;
+      font-size: 34px;
+      line-height: 1.05;
+      letter-spacing: 0;
+      font-weight: 850;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav, .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      align-items: baseline;
+      font-size: 14px;
+    }
+    .subtitle {
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0 20px;
+    }
+    .metric, .report-card {
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .metric strong {
+      display: block;
+      overflow-wrap: anywhere;
+      font-size: 15px;
+    }
+    .report-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .report-card {
+      box-shadow: var(--shadow);
+    }
+    .report-card h2 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+    .report-card p {
+      margin: 6px 0;
+      color: var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      color: var(--muted);
+      font-size: 12px;
+      background: #fafafa;
+    }
+    .badge.ok {
+      border-color: #b7e2cd;
+      color: var(--ok);
+      background: #eefaf3;
+      font-weight: 700;
+    }
+    @media (min-width: 760px) {
+      .metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .report-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 720px) {
+      body {
+        background: linear-gradient(180deg, #ffffff 0, #ffffff 112px, var(--page) 112px);
+        background-color: var(--page);
+        background-repeat: no-repeat;
+      }
+      main { padding: 18px 14px 40px; }
+      h1 { font-size: 27px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <nav><a href="../../../">全部报告</a><a href="../">2026-07-12</a></nav>
+      <h1>P0 基线回归</h1>
+      <p class="subtitle">2026-07-12 上传，按上传时间倒序。</p>
+    </header>
+    <div class="metrics">
+      <article class="metric"><span>报告</span><strong>1</strong></article>
+      <article class="metric"><span>录屏</span><strong>2</strong></article>
+      <article class="metric"><span>截图</span><strong>8</strong></article>
+      <article class="metric"><span>门禁</span><strong>录屏齐全</strong></article>
+    </div>
+    <div class="report-list">
+      <article class="report-card">
+        <h2><a href="mrgl0iif-p0-baseline/">P0 基线回归</a></h2>
+        <p>登录 / 工作台拉起 / 聊天回复</p>
+        <div class="badges">
+          <span class="badge">P0 基线回归</span>
+          <span class="badge">截图 8</span>
+          <span class="badge ok">录屏 2</span>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
