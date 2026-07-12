@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>iBoxClaw 运维手册 - 公开摘要</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f6f7f9;
+      --panel: #ffffff;
+      --panel-soft: #fbfcfe;
+      --ink: #171a21;
+      --muted: #646d7b;
+      --line: #e1e6ef;
+      --line-strong: #cfd7e5;
+      --accent: #285cc8;
+      --accent-soft: #eef4ff;
+      --teal: #0f7f6d;
+      --teal-soft: #eaf8f5;
+      --warn: #a44900;
+      --warn-soft: #fff3e8;
+      --ok: #157f4f;
+      --ok-soft: #eefaf3;
+      --shadow: 0 10px 28px rgba(23, 26, 33, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffffff 0, #ffffff 136px, var(--page) 136px);
+      background-color: var(--page);
+      background-repeat: no-repeat;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.48;
+    }
+    main {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 28px 28px 56px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid rgba(40, 92, 200, 0.24);
+      outline-offset: 3px;
+    }
+    .page-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 6px 0 26px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.05;
+      letter-spacing: 0;
+      font-weight: 850;
+    }
+    h2 {
+      margin: 0;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+    .brand-tile {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #b8e2db;
+      border-radius: 8px;
+      background: var(--teal-soft);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+    .back-link {
+      display: inline-flex;
+      margin-bottom: 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .notice {
+      margin: 18px 0 18px;
+      padding: 14px 16px;
+      border: 1px solid #ffd0a8;
+      border-radius: 8px;
+      background: var(--warn-soft);
+      color: var(--warn);
+      font-weight: 700;
+    }
+    .summary-grid {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 24px;
+    }
+    .metric,
+    .section,
+    .flow-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    .metric {
+      padding: 13px 14px;
+    }
+    .metric span {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+    }
+    .metric strong {
+      display: block;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+    .section {
+      margin-top: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    details {
+      background: var(--panel);
+    }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    .section-summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      min-height: 68px;
+      padding: 0 18px;
+      border-left: 5px solid var(--teal);
+    }
+    .section-body {
+      border-top: 1px solid var(--line);
+      background: var(--panel-soft);
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+    .chevron {
+      width: 9px;
+      height: 9px;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(-45deg);
+      transition: transform 0.16s ease;
+      color: var(--muted);
+    }
+    details[open] > summary .chevron {
+      transform: rotate(45deg);
+    }
+    .flow-card {
+      padding: 14px;
+      background: #fff;
+    }
+    .flow-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .node {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fafafa;
+      color: var(--ink);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .node.external {
+      border-color: #b8e2db;
+      background: var(--teal-soft);
+      color: #086354;
+    }
+    .node.warn {
+      border-color: #ffd0a8;
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #fff;
+      font-size: 14px;
+    }
+    th,
+    td {
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #f3f6fb;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 800;
+    }
+    td {
+      overflow-wrap: anywhere;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      padding: 2px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fafafa;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .badge.ok {
+      border-color: #b7e2cd;
+      background: var(--ok-soft);
+      color: var(--ok);
+    }
+    .badge.warn {
+      border-color: #ffd0a8;
+      background: var(--warn-soft);
+      color: var(--warn);
+    }
+    .callout {
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (min-width: 760px) {
+      .summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 720px) {
+      body {
+        background: linear-gradient(180deg, #ffffff 0, #ffffff 112px, var(--page) 112px);
+        background-color: var(--page);
+        background-repeat: no-repeat;
+      }
+      main {
+        padding: 18px 14px 40px;
+      }
+      h1 {
+        font-size: 27px;
+      }
+      .brand-tile {
+        width: 38px;
+        height: 38px;
+      }
+      .section-summary {
+        min-height: 62px;
+        padding-right: 14px;
+      }
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      td {
+        white-space: normal;
+        min-width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="../index.html">返回门户</a>
+    <header class="page-head">
+      <h1>iBoxClaw 运维手册</h1>
+      <div class="brand-tile" aria-hidden="true">OPS</div>
+    </header>
+
+    <div class="notice">
+      公开脱敏版：这里只放报障定位思路和责任边界，不发布敏感环境细节、完整命令或修复动作。
+    </div>
+
+    <section class="summary-grid" aria-label="手册概览">
+      <div class="metric">
+        <span>覆盖场景</span>
+        <strong>验证码、工作台、聊天回复</strong>
+      </div>
+      <div class="metric">
+        <span>定位方式</span>
+        <strong>症状 → 环节 → 证据 → 归属</strong>
+      </div>
+      <div class="metric">
+        <span>完整版本</span>
+        <strong>保留在内部 runbook</strong>
+      </div>
+    </section>
+
+    <details class="section" open>
+      <summary class="section-summary">
+        <h2>收不到验证码</h2>
+        <span class="chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="section-body">
+        <div class="flow-card">
+          <h3>调用链摘要</h3>
+          <div class="flow-line">
+            <span class="node">前端</span>
+            <span>→</span>
+            <span class="node">身份服务</span>
+            <span>→</span>
+            <span class="node external">短信平台</span>
+            <span>+</span>
+            <span class="node">验证码存储</span>
+          </div>
+          <p>登录和短信验证码不经过业务中台，优先看身份服务侧的时间窗和状态信号。</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>用户现象</th>
+              <th>优先判断</th>
+              <th>归属</th>
+              <th>公开信号</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>点击获取验证码后无短信</td>
+              <td>身份服务是否触达短信平台</td>
+              <td><span class="badge">我方 / 外部</span></td>
+              <td>时间窗内是否出现短信平台错误；平台拒绝偏外部，网络不可达偏我方配置或网络。</td>
+            </tr>
+            <tr>
+              <td>提示请求频繁或图形码错误</td>
+              <td>是否被前置校验拦截</td>
+              <td><span class="badge ok">正常保护</span></td>
+              <td>同一时间窗内身份服务返回频控或校验失败状态。</td>
+            </tr>
+            <tr>
+              <td>验证码已发但登录提示过期</td>
+              <td>验证码存储是否可用、是否重启丢失</td>
+              <td><span class="badge">我方</span></td>
+              <td>验证码存储和过期时间需要内部命令确认，公开版不展示具体查询方式。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details class="section" open>
+      <summary class="section-summary">
+        <h2>进不去工作台</h2>
+        <span class="chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="section-body">
+        <div class="flow-card">
+          <h3>调用链摘要</h3>
+          <div class="flow-line">
+            <span class="node">前端</span>
+            <span>→</span>
+            <span class="node">业务中台</span>
+            <span>→</span>
+            <span class="node">工作台控制服务</span>
+            <span>→</span>
+            <span class="node external">存储资源</span>
+            <span>→</span>
+            <span class="node external">沙箱资源</span>
+            <span>→</span>
+            <span class="node">工作台服务</span>
+          </div>
+          <p>这条链路要区分“没分配资源”“沙箱没起来”“服务起来但不可用”三类问题。</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>用户现象</th>
+              <th>优先判断</th>
+              <th>归属</th>
+              <th>公开信号</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>进入页面长时间等待</td>
+              <td>控制面分配流程是否超时</td>
+              <td><span class="badge">我方</span></td>
+              <td>业务中台或控制服务出现分配超时类错误；内部版用用户标识追踪。</td>
+            </tr>
+            <tr>
+              <td>沙箱没有创建成功</td>
+              <td>外部沙箱资源或配置是否异常</td>
+              <td><span class="badge warn">基础设施</span></td>
+              <td>控制面能区分资源不足、鉴权失败、配置缺失等方向。</td>
+            </tr>
+            <tr>
+              <td>沙箱存在但文件空间异常</td>
+              <td>个人存储空间是否分配成功</td>
+              <td><span class="badge warn">基础设施 / 配置</span></td>
+              <td>诊断结果会标出存储挂载相关根因；公开版不展示内部字段。</td>
+            </tr>
+            <tr>
+              <td>资源都有但仍不可用</td>
+              <td>工作台服务进程或健康检查是否通过</td>
+              <td><span class="badge">我方</span></td>
+              <td>内部诊断按连通性、配置、进程、健康状态分步返回。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details class="section" open>
+      <summary class="section-summary">
+        <h2>发消息没回复</h2>
+        <span class="chevron" aria-hidden="true"></span>
+      </summary>
+      <div class="section-body">
+        <div class="flow-card">
+          <h3>调用链摘要</h3>
+          <div class="flow-line">
+            <span class="node">前端</span>
+            <span>→</span>
+            <span class="node">业务中台</span>
+            <span>→</span>
+            <span class="node">工作台通道</span>
+            <span>→</span>
+            <span class="node">工作台引擎</span>
+            <span>→</span>
+            <span class="node external">模型服务</span>
+            <span>→</span>
+            <span class="node">前端推送</span>
+          </div>
+          <p>先分清“发不出去”“工作台没处理”“模型失败”“回复回不来”。</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>用户现象</th>
+              <th>优先判断</th>
+              <th>归属</th>
+              <th>公开信号</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>发送后一直转圈</td>
+              <td>业务中台是否找到可用工作台</td>
+              <td><span class="badge">我方</span></td>
+              <td>找不到运行中工作台或通道凭据时，先回到工作台诊断。</td>
+            </tr>
+            <tr>
+              <td>能发出但无最终回复</td>
+              <td>工作台服务或模型服务是否异常</td>
+              <td><span class="badge">我方 / 外部</span></td>
+              <td>内部诊断可分模型连通、通道连通和工作台健康。</td>
+            </tr>
+            <tr>
+              <td>回复已生成但页面没显示</td>
+              <td>前端连接是否在线</td>
+              <td><span class="badge ok">用户网络 / 客户端</span></td>
+              <td>服务端能看到推送目标离线或连接鉴权失败类信号。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <div class="callout">
+      完整值班版保留在内部任务文档中，包含精确命令、日志变量、访问边界、风险分级和待补环境信息。公开版只用于远程快速查看排障思路。
+    </div>
+  </main>
+</body>
+</html>

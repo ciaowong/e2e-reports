@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>iBoxClaw 自动化测试</title>
+  <title>iBoxClaw 运行与验证门户</title>
   <style>
     :root {
       color-scheme: light;
@@ -101,6 +101,68 @@
     .catalog {
       display: grid;
       gap: 14px;
+    }
+    .portal-grid {
+      display: grid;
+      gap: 14px;
+      margin: 18px 0 24px;
+    }
+    .portal-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      min-height: 112px;
+      padding: 16px 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      color: var(--ink);
+    }
+    .portal-card:hover {
+      border-color: #b7c8ee;
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+    .portal-card.ops:hover {
+      border-color: #b8e2db;
+      background: var(--teal-soft);
+    }
+    .portal-card h2 {
+      margin: 0 0 6px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+    .portal-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+    .portal-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      margin-bottom: 10px;
+      padding: 2px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fafafa;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .portal-arrow {
+      color: var(--muted);
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .section-title {
+      margin: 26px 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
     }
     .metrics {
       display: grid;
@@ -382,6 +444,9 @@
       .report-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      .portal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
       .module-body .report-list {
         grid-template-columns: 1fr;
       }
@@ -441,6 +506,13 @@
         grid-template-columns: 1fr;
         gap: 3px;
       }
+      .portal-card {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+      .portal-arrow {
+        display: none;
+      }
       .report-title {
         white-space: normal;
         overflow-wrap: anywhere;
@@ -452,11 +524,30 @@
   <main>
 
       <header class="page-head">
-        <h1>iBoxClaw 自动化测试</h1>
-        <div class="brand-tile" aria-hidden="true">QA</div>
+        <h1>iBoxClaw 运行与验证门户</h1>
+        <div class="brand-tile" aria-hidden="true">iB</div>
       </header>
+      <section class="portal-grid" aria-label="门户入口">
+        <a class="portal-card ops" href="ops/iboxclaw-callchain.html">
+          <span>
+            <span class="portal-kicker">运维</span>
+            <h2>故障定位手册</h2>
+            <p>公开脱敏版调用地图，按用户现象定位可能环节；完整命令留在内部 runbook。</p>
+          </span>
+          <span class="portal-arrow" aria-hidden="true">›</span>
+        </a>
+        <a class="portal-card" href="#test-reports">
+          <span>
+            <span class="portal-kicker">测试</span>
+            <h2>自动化测试报告</h2>
+            <p>P0/P1 回归报告、截图和录屏，按功能与日期归档。</p>
+          </span>
+          <span class="portal-arrow" aria-hidden="true">›</span>
+        </a>
+      </section>
+      <h2 id="test-reports" class="section-title">自动化测试报告</h2>
       <section class="catalog" aria-label="测试报告目录">
-        <details class="module p0" open>
+        <details class="module p0">
           <summary class="module-summary">
             <span class="summary-main">
               <span class="tier">P0</span>
@@ -526,7 +617,7 @@
 
           </div>
         </details>
-        <details class="module p1" open>
+        <details class="module p1">
           <summary class="module-summary">
             <span class="summary-main">
               <span class="tier">P1</span>
