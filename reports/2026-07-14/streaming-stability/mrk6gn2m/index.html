@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>P1 流式状态稳定性（24轮） - 2026-07-14</title>
+  <style>
+    :root { color-scheme: light; --page:#f6f7f9; --panel:#fff; --ink:#171a21; --muted:#646d7b; --line:#e1e6ef; --ok:#157f4f; --accent:#285cc8; --accent-soft:#eef4ff; --orange:#e96f1c; --orange-soft:#fff3ea; --shadow:0 10px 28px rgba(23,26,33,.08); }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:linear-gradient(180deg,#fff 0,#fff 128px,var(--page) 128px); background-color:var(--page); background-repeat:no-repeat; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.45; }
+    main { width:min(1080px,100%); margin:0 auto; padding:28px 28px 56px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:6px 0 24px; }
+    h1 { margin:0; font-size:32px; line-height:1.1; font-weight:850; }
+    h2 { margin:28px 0 12px; font-size:20px; }
+    a { color:var(--accent); text-decoration:none; }
+    .brand-tile { width:42px; height:42px; border:1px solid #f2c39d; border-radius:8px; background:var(--orange-soft); color:var(--orange); display:grid; place-items:center; font-size:13px; font-weight:850; line-height:1; flex:0 0 auto; }
+    .summary { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:0 0 22px; }
+    .metric { min-width:0; padding:12px; border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:var(--shadow); }
+    .metric span { display:block; color:var(--muted); font-size:12px; margin-bottom:6px; }
+    .metric strong { display:block; font-size:15px; overflow-wrap:anywhere; }
+    .metric.ok strong { color:var(--ok); }
+    .section { border:1px solid var(--line); border-radius:8px; background:var(--panel); box-shadow:var(--shadow); padding:16px; margin:0 0 18px; }
+    .section-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin:0 0 12px; }
+    .section-head h2 { margin:0; font-size:19px; }
+    .badge { border:1px solid #b7e2cd; border-radius:999px; color:var(--ok); background:#eefaf3; padding:2px 8px; font-size:12px; font-weight:750; white-space:nowrap; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    figure { margin:0; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:#fff; }
+    img,video { display:block; width:100%; height:auto; background:#fff; }
+    figcaption { padding:10px 12px; color:var(--muted); font-size:14px; border-top:1px solid var(--line); }
+    .note { color:var(--muted); font-size:14px; margin:4px 0 0; }
+    @media (max-width:760px) { main { padding:18px 14px 40px; } h1 { font-size:27px; } .summary,.grid { grid-template-columns:1fr; } .section { padding:12px; } .section-head { display:grid; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <a href="../../../../">iBoxClaw 自动化测试</a>
+        <h1>P1 流式状态稳定性（24轮）</h1>
+      </div>
+      <div class="brand-tile" aria-hidden="true">P1</div>
+    </header>
+    <section class="summary" aria-label="执行摘要">
+      <div class="metric ok"><span>结果</span><strong>通过</strong></div>
+      <div class="metric"><span>日期</span><strong>2026-07-14</strong></div>
+      <div class="metric"><span>范围</span><strong>24轮多场景对话</strong></div>
+      <div class="metric"><span>证据</span><strong>24 张截图 / 1 段录屏</strong></div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <h2>录屏</h2>
+        <span class="badge">通过</span>
+      </div>
+      <div class="grid">
+        <figure>
+          <video controls preload="metadata" src="assets/recording.mp4"></video>
+          <figcaption>全过程录屏（24轮对话）</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-head">
+        <h2>24轮对话截图</h2>
+        <span class="badge">全部通过</span>
+      </div>
+      <p class="note">覆盖：问候、Memory 存储回忆遗忘、生图 MCP、定时任务 MCP、计算、翻译、代码、对比、角色扮演、商业分析、结构化数据、修正改写、多步推理、天气工具、定时任务查询、经营建议、情感对话、收尾总结。每轮验证无闪烁 + loading 复位 + composer 恢复。</p>
+      <div class="grid">
+        <figure>
+          <img src="assets/r1.jpg" alt="轮次1 问候" />
+          <figcaption>轮次1 问候</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r2.jpg" alt="轮次2 Memory 存储" />
+          <figcaption>轮次2 Memory 存储</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r3.jpg" alt="轮次3 知识问答" />
+          <figcaption>轮次3 知识问答</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r4.jpg" alt="轮次4 计算" />
+          <figcaption>轮次4 计算</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r5.jpg" alt="轮次5 翻译" />
+          <figcaption>轮次5 翻译</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r6.jpg" alt="轮次6 生图 MCP" />
+          <figcaption>轮次6 生图 MCP</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r7.jpg" alt="轮次7 创意写作" />
+          <figcaption>轮次7 创意写作</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r8.jpg" alt="轮次8 代码生成" />
+          <figcaption>轮次8 代码生成</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r9.jpg" alt="轮次9 实用文书" />
+          <figcaption>轮次9 实用文书</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r10.jpg" alt="轮次10 定时任务 MCP" />
+          <figcaption>轮次10 定时任务 MCP</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r11.jpg" alt="轮次11 对比分析" />
+          <figcaption>轮次11 对比分析</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r12.jpg" alt="轮次12 上下文追问" />
+          <figcaption>轮次12 上下文追问</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r13.jpg" alt="轮次13 角色扮演" />
+          <figcaption>轮次13 角色扮演</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r14.jpg" alt="轮次14 商业分析" />
+          <figcaption>轮次14 商业分析</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r15.jpg" alt="轮次15 Memory 回忆" />
+          <figcaption>轮次15 Memory 回忆</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r16.jpg" alt="轮次16 Memory 遗忘" />
+          <figcaption>轮次16 Memory 遗忘</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r17.jpg" alt="轮次17 结构化数据" />
+          <figcaption>轮次17 结构化数据</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r18.jpg" alt="轮次18 修正改写" />
+          <figcaption>轮次18 修正改写</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r19.jpg" alt="轮次19 多步推理" />
+          <figcaption>轮次19 多步推理</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r20.jpg" alt="轮次20 工具调用" />
+          <figcaption>轮次20 工具调用</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r21.jpg" alt="轮次21 定时任务查询" />
+          <figcaption>轮次21 定时任务查询</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r22.jpg" alt="轮次22 经营建议" />
+          <figcaption>轮次22 经营建议</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r23.jpg" alt="轮次23 情感对话" />
+          <figcaption>轮次23 情感对话</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/r24.jpg" alt="轮次24 收尾总结" />
+          <figcaption>轮次24 收尾总结</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T12:27:07.065531+08:00",
+  "generatedAt": "2026-07-14T13:13:47.595824+08:00",
   "policy": {
     "recordingRequired": true,
     "missingRecordingDisposition": "rerun",
@@ -103,24 +103,26 @@
       "videos": 1
     },
     {
-      "slug": "mrk57u4p-streaming-stability",
-      "title": "P1 流式状态稳定性",
-      "href": "reports/2026-07-14/streaming-stability/mrk57u4p/",
-      "sourceReport": "evidence-report-mrk57u4p-streaming-stability",
-      "uploadedAt": "2026-07-14T12:27:07.065531+08:00",
-      "uploadedTimestamp": 1784003227,
+      "slug": "mrk6gn2m-streaming-stability-24round",
+      "title": "P1 流式状态稳定性（24轮）",
+      "href": "reports/2026-07-14/streaming-stability/mrk6gn2m/",
+      "sourceReport": "evidence-report-mrk6gn2m-streaming-stability",
+      "uploadedAt": "2026-07-14T13:13:47.595824+08:00",
+      "uploadedTimestamp": 1784006027,
       "uploadedDate": "2026-07-14",
       "category": {
         "slug": "streaming-stability",
         "label": "流式状态稳定性",
         "sort": 1
       },
-      "screenshots": 2,
+      "screenshots": 24,
       "videos": 1,
       "tags": [
         "p1",
         "chat",
-        "streaming"
+        "streaming",
+        "memory",
+        "mcp"
       ],
       "result": "pass"
     },
@@ -129,8 +131,8 @@
       "title": "P1 Tool-call Loading 持久性",
       "href": "reports/2026-07-14/tool-call-loading/mrk541a8/",
       "sourceReport": "evidence-report-mrk541a8-tool-call-loading",
-      "uploadedAt": "2026-07-14T12:27:07.065531+08:00",
-      "uploadedTimestamp": 1784003227,
+      "uploadedAt": "2026-07-14T13:13:47.595824+08:00",
+      "uploadedTimestamp": 1784006027,
       "uploadedDate": "2026-07-14",
       "category": {
         "slug": "tool-call-loading",
