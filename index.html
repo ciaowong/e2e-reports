@@ -329,6 +329,23 @@
     details[open] > summary .chevron {
       transform: rotate(45deg);
     }
+
+    .feature-flat {
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+    .feature-flat .feature-name {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .feature-flat .report-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
     .module-body {
       border-top: 1px solid var(--line);
       background: var(--panel-soft);
@@ -617,134 +634,84 @@
 
           </div>
         </details>
-        <details class="module p1">
+        <details class="module p1" open>
           <summary class="module-summary">
             <span class="summary-main">
               <span class="tier">P1</span>
               <span class="summary-text">
-                <span class="module-title">媒体能力</span>
-                <span class="module-subtitle">按上传日期 / 功能 / run 归类；每个场景只展示最新合格报告</span>
+                <span class="module-title">P1 回归</span>
+                <span class="module-subtitle">按功能归类；每个场景只展示最新合格报告</span>
               </span>
             </span>
-           <span class="summary-side"><span class="count">7 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-         </summary>
-         <div class="module-body">
-         <details class="feature media">
-          <details class="feature">
-            <summary class="feature-summary">
-              <span class="feature-name">流式状态稳定性</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
+            <span class="summary-side"><span class="count">7 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+          <div class="module-body">
 
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-14</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
+            <div class="feature-flat">
+              <span class="feature-name">流式状态稳定性</span>
               <div class="report-list">
                 <a class="report-link" href="reports/2026-07-14/streaming-stability/mrk57u4p/">
                   <span class="report-title">P1 流式状态稳定性</span>
                   <span class="report-meta">2 图 / 1 录屏</span>
                 </a>
-        </div>
-            </details>
+              </div>
+            </div>
 
-          </details>
-
-          <details class="feature">
-            <summary class="feature-summary">
+            <div class="feature-flat">
               <span class="feature-name">Tool-call Loading 持久性</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-14</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
               <div class="report-list">
                 <a class="report-link" href="reports/2026-07-14/tool-call-loading/mrk541a8/">
                   <span class="report-title">P1 Tool-call Loading 持久性</span>
                   <span class="report-meta">2 图 / 1 录屏</span>
                 </a>
-        </div>
-            </details>
+              </div>
+            </div>
 
-          </details>
-
-          </details>
-          <details class="feature media">
-            <summary class="feature-summary">
+            <div class="feature-flat">
               <span class="feature-name">聊天 MCP 图生视频</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-10</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
               <div class="report-list">
                 <a class="report-link" href="reports/2026-07-10/chat-mcp-create-video/mreihz4p-chat-mcp-create_video/">
                   <span class="report-title">聊天 MCP 图生视频</span>
                   <span class="report-meta">10 图 / 1 录屏</span>
                 </a>
-        </div>
-            </details>
+              </div>
+            </div>
 
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
+            <div class="feature-flat">
               <span class="feature-name">聊天 MCP 图生图</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-10</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
               <div class="report-list">
                 <a class="report-link" href="reports/2026-07-10/chat-mcp-edit-image/mrehnhzk-chat-mcp-edit_image/">
                   <span class="report-title">聊天 MCP 图生图</span>
                   <span class="report-meta">8 图 / 1 录屏</span>
                 </a>
-        </div>
-            </details>
+              </div>
+            </div>
 
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
+            <div class="feature-flat">
               <span class="feature-name">创作页图生视频</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-11</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
               <div class="report-list">
                 <a class="report-link" href="reports/2026-07-11/creation-video-multiref/mrfnm85u-video-multiref-5-images/">
                   <span class="report-title">图生视频多参考图</span>
                   <span class="report-meta">3 图 / 1 录屏</span>
                 </a>
-        </div>
-            </details>
+              </div>
+            </div>
 
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
+            <div class="feature-flat">
               <span class="feature-name">创作页图生图</span>
-              <span class="summary-side"><span class="count">2 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-11</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
               <div class="report-list">
                 <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnvm1z-real-img2img-upload-ref/">
                   <span class="report-title">真实创作页图生图</span>
                   <span class="report-meta">4 图 / 1 录屏</span>
                 </a>
-
-
                 <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnkwg7-img2img-upload-ref/">
                   <span class="report-title">图生图参考图上传</span>
                   <span class="report-meta">3 图 / 1 录屏</span>
                 </a>
-        </div>
-            </details>
+              </div>
+            </div>
 
-          </details>
-        </div>
+          </div>
         </details>
 
       </section>
