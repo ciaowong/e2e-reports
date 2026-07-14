@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T12:04:56.189525+08:00",
+  "generatedAt": "2026-07-14T12:27:07.065531+08:00",
   "policy": {
     "recordingRequired": true,
     "missingRecordingDisposition": "rerun",
@@ -103,39 +103,16 @@
       "videos": 1
     },
     {
-      "slug": "mrk3vw8q-loading-reset",
-      "title": "P1 Loading 复位回归",
-      "href": "reports/2026-07-14/p1-regression/mrk3vw8q-loading-reset/",
-      "sourceReport": "evidence-report-mrk3vw8q-loading-reset",
-      "uploadedAt": "2026-07-14T12:04:56.189525+08:00",
-      "uploadedTimestamp": 1784001896,
-      "uploadedDate": "2026-07-14",
-      "category": {
-        "slug": "p1-regression",
-        "label": "P1 回归",
-        "sort": 1
-      },
-      "screenshots": 2,
-      "videos": 1,
-      "tags": [
-        "p1",
-        "chat",
-        "loading"
-      ],
-      "result": "pass",
-      "duration": "2.0 min"
-    },
-    {
-      "slug": "mrk3yoim-streaming-stability",
+      "slug": "mrk57u4p-streaming-stability",
       "title": "P1 流式状态稳定性",
-      "href": "reports/2026-07-14/p1-regression/mrk3yoim-streaming-stability/",
-      "sourceReport": "evidence-report-mrk3yoim-streaming-stability",
-      "uploadedAt": "2026-07-14T12:04:56.189525+08:00",
-      "uploadedTimestamp": 1784001896,
+      "href": "reports/2026-07-14/streaming-stability/mrk57u4p/",
+      "sourceReport": "evidence-report-mrk57u4p-streaming-stability",
+      "uploadedAt": "2026-07-14T12:27:07.065531+08:00",
+      "uploadedTimestamp": 1784003227,
       "uploadedDate": "2026-07-14",
       "category": {
-        "slug": "p1-regression",
-        "label": "P1 回归",
+        "slug": "streaming-stability",
+        "label": "流式状态稳定性",
         "sort": 1
       },
       "screenshots": 2,
@@ -145,20 +122,19 @@
         "chat",
         "streaming"
       ],
-      "result": "pass",
-      "duration": "33.6s"
+      "result": "pass"
     },
     {
-      "slug": "mrk4cqr8-tool-call-loading",
+      "slug": "mrk541a8-tool-call-loading",
       "title": "P1 Tool-call Loading 持久性",
-      "href": "reports/2026-07-14/p1-regression/mrk4cqr8-tool-call-loading/",
-      "sourceReport": "evidence-report-mrk4cqr8-tool-call-loading",
-      "uploadedAt": "2026-07-14T12:04:56.189525+08:00",
-      "uploadedTimestamp": 1784001896,
+      "href": "reports/2026-07-14/tool-call-loading/mrk541a8/",
+      "sourceReport": "evidence-report-mrk541a8-tool-call-loading",
+      "uploadedAt": "2026-07-14T12:27:07.065531+08:00",
+      "uploadedTimestamp": 1784003227,
       "uploadedDate": "2026-07-14",
       "category": {
-        "slug": "p1-regression",
-        "label": "P1 回归",
+        "slug": "tool-call-loading",
+        "label": "Tool-call Loading",
         "sort": 1
       },
       "screenshots": 2,
@@ -168,8 +144,7 @@
         "chat",
         "tool-call"
       ],
-      "result": "pass",
-      "duration": "41.0s"
+      "result": "pass"
     }
   ],
   "skipped": [],
