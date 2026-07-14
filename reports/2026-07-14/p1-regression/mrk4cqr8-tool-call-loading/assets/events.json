@@ -1,0 +1,1758 @@
+{
+  "networkEvents": [
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/onboarding/check-user"
+    },
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/runtime/slot"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/onboarding/check-user",
+      "bodyPreview": "{\"ok\":true,\"isNewUser\":false,\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"runtimeMode\":\"acs\"}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/runtime/slot",
+      "bodyPreview": "{\"ok\":true,\"data\":{\"hostCode\":\"acs\",\"slotId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"containerName\":\"iboxclaw--iboxclaw-sbs-605-b9g9q\",\"instanceKey\":\"iboxclaw-chat-a39ede99-15c3-4b88-b23e-3d266a8de270\",\"status\":\"ready\",\"dataRestoreStatus\":\"full\",\"runtimeMode\":\"acs\",\"message\":\"ACS sandbox ready\",\"healthReady\":true,\"healthCheckAttempts\":0,\"healthCheckDurationMs\":0,\"healthCheckFallback\":false,\"healthCheckUrl\":\"\"}}"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/models"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4b51i0ki41i89\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:55:17.000Z\",\"lastActiveAt\":\"2026-07-14T03:55:17.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk43r30vt3qb9hg\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:49:29.000Z\",\"lastActiveAt\":\"2026-07-14T03:49:29.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4214cqux1o3ec\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:48:12.000Z\",\"lastActiveAt\":\"2026-07-14T03:48:12.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3zsqot4p68jop\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:46:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:46:27.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3ype9jkih2f41\",\"title\":\"请写一段200字左右的文字，描述春天的公\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:45:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:45:27.000Z\"},{\""
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/models"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4b51i0ki41i89\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:55:17.000Z\",\"lastActiveAt\":\"2026-07-14T03:55:17.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk43r30vt3qb9hg\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:49:29.000Z\",\"lastActiveAt\":\"2026-07-14T03:49:29.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4214cqux1o3ec\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:48:12.000Z\",\"lastActiveAt\":\"2026-07-14T03:48:12.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3zsqot4p68jop\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:46:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:46:27.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3ype9jkih2f41\",\"title\":\"请写一段200字左右的文字，描述春天的公\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:45:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:45:27.000Z\"},{\""
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=50"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=50",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:56:18.000Z\",\"lastActiveAt\":\"2026-07-14T03:56:18.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4b51i0ki41i89\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:55:17.000Z\",\"lastActiveAt\":\"2026-07-14T03:55:17.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk43r30vt3qb9hg\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:49:29.000Z\",\"lastActiveAt\":\"2026-07-14T03:49:29.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4214cqux1o3ec\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:48:12.000Z\",\"lastActiveAt\":\"2026-07-14T03:48:12.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3zsqot4p68jop\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:46:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:46:27.000Z\"},{\"sessionId"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:56:33.000Z\",\"lastActiveAt\":\"2026-07-14T03:56:33.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4b51i0ki41i89\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:55:17.000Z\",\"lastActiveAt\":\"2026-07-14T03:55:17.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk43r30vt3qb9hg\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:49:29.000Z\",\"lastActiveAt\":\"2026-07-14T03:49:29.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4214cqux1o3ec\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:48:12.000Z\",\"lastActiveAt\":\"2026-07-14T03:48:12.000Z\"},{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3zsqot4p68jop\",\"title\":\"帮我查询北京今天的天气\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:46:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:46:27.000Z\"},{\"sessionId"
+    }
+  ],
+  "wsFrames": [
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/?token=<redacted>",
+      "payload": "{\"type\":\"connected\"}",
+      "parsed": {
+        "type": "connected"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"register\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\"}",
+      "parsed": {
+        "type": "register",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.connected\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\"}",
+      "parsed": {
+        "type": "chat.connected",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/notifications?token=<redacted>",
+      "payload": "{\"type\":\"notifications.connected\",\"event\":\"notifications.connected\",\"payload\":{\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\"}}",
+      "parsed": {
+        "type": "notifications.connected",
+        "event": "notifications.connected",
+        "payload": {
+          "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/notifications?token=<redacted>",
+      "payload": "{\"type\":\"notifications.connected\",\"event\":\"notifications.connected\",\"payload\":{\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\"}}",
+      "parsed": {
+        "type": "notifications.connected",
+        "event": "notifications.connected",
+        "payload": {
+          "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270"
+        }
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.message\",\"id\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"帮我查询北京今天的天气\",\"mediaUrls\":[],\"agentId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\"}",
+      "parsed": {
+        "type": "chat.message",
+        "id": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "sessionId": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "帮我查询北京今天的天气",
+        "mediaUrls": [],
+        "agentId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-89a373b7-12a2-419e-9a14-767e50edec34\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-89a373b7-12a2-419e-9a14-767e50edec34",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-f2837f75-0ac6-427b-93da-6c37e32a6616\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-f2837f75-0ac6-427b-93da-6c37e32a6616",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-0c55a6dd-3683-41ed-90bb-51347bc9146b\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天的天气。\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天的天气。\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天的天气。\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-0c55a6dd-3683-41ed-90bb-51347bc9146b",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天的天气。",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天的天气。"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天的天气。"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-8ba697e9-6921-4652-99ad-c795ea4502ef\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天的天气。\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天的天气。\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天的天气。\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-8ba697e9-6921-4652-99ad-c795ea4502ef",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天的天气。",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天的天气。"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天的天气。"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-9164cf5b-0a86-400a-945d-83603e9796d1\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天的天气。\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天的天气。\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天的天气。\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-9164cf5b-0a86-400a-945d-83603e9796d1",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天的天气。",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天的天气。"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天的天气。"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-fbfd8258-8c1e-40a3-8aa6-db43b8ba5dc2\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-fbfd8258-8c1e-40a3-8aa6-db43b8ba5dc2",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-9512af14-b484-4a0b-a61f-7c22fbd64003\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-9512af14-b484-4a0b-a61f-7c22fbd64003",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-ac01ca09-79eb-4295-8044-591eb8ad2c28\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-ac01ca09-79eb-4295-8044-591eb8ad2c28",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-38089af7-e1ab-47a0-bdbb-5bf659fde192\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-38089af7-e1ab-47a0-bdbb-5bf659fde192",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-664e72ab-6a78-411f-9a5b-54d14008ed8a\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-664e72ab-6a78-411f-9a5b-54d14008ed8a",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-59720afe-4867-4b24-a9fa-1d897e31e713\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-59720afe-4867-4b24-a9fa-1d897e31e713",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-9a5f295d-65e7-4310-a4ab-cc9d075479b6\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-9a5f295d-65e7-4310-a4ab-cc9d075479b6",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-d874e79a-a19f-4fda-954e-0ad963c3c8c6\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-d874e79a-a19f-4fda-954e-0ad963c3c8c6",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-ea3443ee-7fb4-4ce5-bb12-7ee798826238\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-ea3443ee-7fb4-4ce5-bb12-7ee798826238",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-7c9957fb-0b6b-49ae-b11e-1ee0eefeac94\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-7c9957fb-0b6b-49ae-b11e-1ee0eefeac94",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-dc402bef-27f6-4bb4-911a-3bcee8a8c3fa\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-dc402bef-27f6-4bb4-911a-3bcee8a8c3fa",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-b7fed180-1d7a-4d69-ba8c-de1283d3b2b2\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-b7fed180-1d7a-4d69-ba8c-de1283d3b2b2",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-8aba786e-e1d6-43ef-9166-475f36c7a209\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-8aba786e-e1d6-43ef-9166-475f36c7a209",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-2e867802-be13-4ffa-ab23-dca87ebf3d54\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-2e867802-be13-4ffa-ab23-dca87ebf3d54",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-9f55e41f-1f52-453a-8450-1832e10604c3\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-9f55e41f-1f52-453a-8450-1832e10604c3",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-b6c9be5b-0cbe-4149-b05a-d2fc42e611eb\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-b6c9be5b-0cbe-4149-b05a-d2fc42e611eb",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-c3e6c85c-5cc2-4a63-8b58-7738af4a592c\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n-\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n-\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n-\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-c3e6c85c-5cc2-4a63-8b58-7738af4a592c",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n-",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n-"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n-"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-07f057dd-f8d5-43f8-a845-d2610a5354b3\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-07f057dd-f8d5-43f8-a845-d2610a5354b3",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-09cf70de-2cc8-43ee-8410-681c137758db\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-09cf70de-2cc8-43ee-8410-681c137758db",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-8850fd1b-201b-4635-8846-22fac78642bc\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-8850fd1b-201b-4635-8846-22fac78642bc",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-ec0fc85f-7f3f-49f3-87b5-131a8d0c06d7\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-ec0fc85f-7f3f-49f3-87b5-131a8d0c06d7",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-f8874568-9220-4440-ad74-f129654fc764\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n-\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n-\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n-\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-f8874568-9220-4440-ad74-f129654fc764",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n-",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n-"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n-"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-b941f254-5f18-41bd-9f9d-acd614c950ae\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**:\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**:\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**:\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-b941f254-5f18-41bd-9f9d-acd614c950ae",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**:",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**:"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**:"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-95ace341-3049-42c5-99a9-9327dd1c8737\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-95ace341-3049-42c5-99a9-9327dd1c8737",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-8bb722fe-bd3e-41be-8965-e89729a478f6\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-8bb722fe-bd3e-41be-8965-e89729a478f6",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-fc63e007-77a6-434b-8e10-db7e7d2df1b4\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-fc63e007-77a6-434b-8e10-db7e7d2df1b4",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-d8dc7449-3649-4bcb-ba46-9df3fc7bb2c8\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-d8dc7449-3649-4bcb-ba46-9df3fc7bb2c8",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-c015878c-5c1e-4d99-aa41-6ba4e5638c2c\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 1\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 1\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 1\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-c015878c-5c1e-4d99-aa41-6ba4e5638c2c",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 1",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 1"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 1"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-ce6e178d-0ede-444e-9334-e3ef72570204\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日)\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日)\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日)\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-ce6e178d-0ede-444e-9334-e3ef72570204",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日)",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日)"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日)"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-63be0576-36fe-4840-8cec-8d5dea39975b\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-63be0576-36fe-4840-8cec-8d5dea39975b",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-3bad19fb-d7e7-4655-8596-102fe1419a68\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-3bad19fb-d7e7-4655-8596-102fe1419a68",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-d752e116-3a66-4e19-912d-5a477412f2ab\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 3\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 3\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 3\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-d752e116-3a66-4e19-912d-5a477412f2ab",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 3",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 3"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 3"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-03bd0f5a-8ecb-4640-b599-ce77cec89e4b\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-03bd0f5a-8ecb-4640-b599-ce77cec89e4b",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-714b5a01-b1df-4c75-a26c-e7bb3ba1e6a9\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-714b5a01-b1df-4c75-a26c-e7bb3ba1e6a9",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-dfde4e0e-2e52-4b85-a7ac-4712c40b26dd\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-dfde4e0e-2e52-4b85-a7ac-4712c40b26dd",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-3e6e5a3e-4b74-4dc8-89fb-a872c292c957\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-3e6e5a3e-4b74-4dc8-89fb-a872c292c957",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-db43389a-bbfa-4528-9fb8-4523a8c12cd0\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-db43389a-bbfa-4528-9fb8-4523a8c12cd0",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-96a1c8d2-775f-41a7-b56f-e4a37f3c7f7a\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-96a1c8d2-775f-41a7-b56f-e4a37f3c7f7a",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-e6e3b7ca-cd92-41bb-81ba-0e70e35fe6ab\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-e6e3b7ca-cd92-41bb-81ba-0e70e35fe6ab",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-76407d46-e118-4dc6-8705-fe0b45260545\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-76407d46-e118-4dc6-8705-fe0b45260545",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-d52540a9-753c-4424-a354-9ccce477b194\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-d52540a9-753c-4424-a354-9ccce477b194",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-3d575027-edb2-4f2d-9100-e37274f159a1\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-3d575027-edb2-4f2d-9100-e37274f159a1",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-2d99419d-a82b-433c-96df-297ab996aba5\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-2d99419d-a82b-433c-96df-297ab996aba5",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-5f519d7f-1136-435f-8e2b-a1423578e0e7\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-5f519d7f-1136-435f-8e2b-a1423578e0e7",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-11c823ab-05e3-4e52-9a8b-2ac44f1c8f63\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-11c823ab-05e3-4e52-9a8b-2ac44f1c8f63",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-738f3ba0-90ad-43ef-8fd6-430064260445\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\"},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-738f3ba0-90ad-43ef-8fd6-430064260445",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧"
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-5680452a-b348-4d5f-8364-b251fba8f4ac\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\\n\\n\\n\\nMEDIA:https://wttr.in/北京\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.deliver.media\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\\n\\nMEDIA:https://wttr.in/北京\",\"media\":[{\"url\":\"https://wttr.in/北京\",\"persistSourceUrl\":\"https://wttr.in/北京\"}]},\"epoch\":0,\"lastIncomingText\":\"北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\\n\\n\\n\\nMEDIA:https://wttr.in/北京\",\"mediaUrl\":\"https://wttr.in/北京\",\"mediaUrls\":[\"https://wttr.in/北京\"]}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-5680452a-b348-4d5f-8364-b251fba8f4ac",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\n\n\n\nMEDIA:https://wttr.in/北京",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.deliver.media",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\n\nMEDIA:https://wttr.in/北京",
+          "media": [
+            {
+              "url": "https://wttr.in/北京",
+              "persistSourceUrl": "https://wttr.in/北京"
+            }
+          ]
+        },
+        "epoch": 0,
+        "lastIncomingText": "北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\n\n\n\nMEDIA:https://wttr.in/北京",
+        "mediaUrl": "https://wttr.in/北京",
+        "mediaUrls": [
+          "https://wttr.in/北京"
+        ]
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-80d36ad7-00f4-46ac-ac58-ca38468ff2dc\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0\",\"text\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"idempotencyKey\":\"chat-b200e8ae-4413-4042-8653-e1c3bec78cc3\",\"traceId\":\"9b37eec7-6501-47e3-99d3-41584f1e42b9\",\"sourcePathHint\":\"runtimeBridge.finalize\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\\n\\nMEDIA:https://wttr.in/北京\",\"media\":[{\"url\":\"https://wttr.in/北京\",\"persistSourceUrl\":\"https://wttr.in/北京\"}]},\"epoch\":0,\"lastIncomingText\":\"我帮你查一下北京今天天气很好！☀️\\n\\n**今天 (7 月 14 日):**\\n- **气温**: 最高约 34°C，最低约 29°C\\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\\n- **湿度**: 6-10 km (很低)\\n- **降水概率**: 基本无雨 (0-2%)\\n\\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\\n\\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\",\"mediaUrl\":\"https://wttr.in/北京\",\"mediaUrls\":[\"https://wttr.in/北京\"]}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-80d36ad7-00f4-46ac-ac58-ca38468ff2dc",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk4crd21m2ewbx0",
+        "text": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "idempotencyKey": "chat-b200e8ae-4413-4042-8653-e1c3bec78cc3",
+        "traceId": "9b37eec7-6501-47e3-99d3-41584f1e42b9",
+        "sourcePathHint": "runtimeBridge.finalize",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧\n\nMEDIA:https://wttr.in/北京",
+          "media": [
+            {
+              "url": "https://wttr.in/北京",
+              "persistSourceUrl": "https://wttr.in/北京"
+            }
+          ]
+        },
+        "epoch": 0,
+        "lastIncomingText": "我帮你查一下北京今天天气很好！☀️\n\n**今天 (7 月 14 日):**\n- **气温**: 最高约 34°C，最低约 29°C\n- **天气**: 白天晴朗 ☀️，傍晚有烟霾，夜间多云\n- **湿度**: 6-10 km (很低)\n- **降水概率**: 基本无雨 (0-2%)\n\n明天 (7 月 15 日) 同样晴朗，气温会到 35°C。后天 (7 月 16 日) 早上会有些烟雾，中午又放晴了。\n\n北京最近天气挺热的，最高温都快到 37°C 了，出门记得防晒补水哦！💧",
+        "mediaUrl": "https://wttr.in/北京",
+        "mediaUrls": [
+          "https://wttr.in/北京"
+        ]
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/?token=<redacted>",
+      "payload": "{\"type\":\"ping\"}",
+      "parsed": {
+        "type": "ping"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"ping\"}",
+      "parsed": {
+        "type": "ping"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk4crd21m2ewbx0&token=<redacted>",
+      "payload": "{\"type\":\"pong\"}",
+      "parsed": {
+        "type": "pong"
+      }
+    }
+  ]
+}

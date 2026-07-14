@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T01:58:20+00:00",
+  "generatedAt": "2026-07-14T12:04:56.189525+08:00",
   "policy": {
     "recordingRequired": true,
     "missingRecordingDisposition": "rerun",
@@ -101,6 +101,75 @@
       },
       "screenshots": 8,
       "videos": 1
+    },
+    {
+      "slug": "mrk3vw8q-loading-reset",
+      "title": "P1 Loading 复位回归",
+      "href": "reports/2026-07-14/p1-regression/mrk3vw8q-loading-reset/",
+      "sourceReport": "evidence-report-mrk3vw8q-loading-reset",
+      "uploadedAt": "2026-07-14T12:04:56.189525+08:00",
+      "uploadedTimestamp": 1784001896,
+      "uploadedDate": "2026-07-14",
+      "category": {
+        "slug": "p1-regression",
+        "label": "P1 回归",
+        "sort": 1
+      },
+      "screenshots": 2,
+      "videos": 1,
+      "tags": [
+        "p1",
+        "chat",
+        "loading"
+      ],
+      "result": "pass",
+      "duration": "2.0 min"
+    },
+    {
+      "slug": "mrk3yoim-streaming-stability",
+      "title": "P1 流式状态稳定性",
+      "href": "reports/2026-07-14/p1-regression/mrk3yoim-streaming-stability/",
+      "sourceReport": "evidence-report-mrk3yoim-streaming-stability",
+      "uploadedAt": "2026-07-14T12:04:56.189525+08:00",
+      "uploadedTimestamp": 1784001896,
+      "uploadedDate": "2026-07-14",
+      "category": {
+        "slug": "p1-regression",
+        "label": "P1 回归",
+        "sort": 1
+      },
+      "screenshots": 2,
+      "videos": 1,
+      "tags": [
+        "p1",
+        "chat",
+        "streaming"
+      ],
+      "result": "pass",
+      "duration": "33.6s"
+    },
+    {
+      "slug": "mrk4cqr8-tool-call-loading",
+      "title": "P1 Tool-call Loading 持久性",
+      "href": "reports/2026-07-14/p1-regression/mrk4cqr8-tool-call-loading/",
+      "sourceReport": "evidence-report-mrk4cqr8-tool-call-loading",
+      "uploadedAt": "2026-07-14T12:04:56.189525+08:00",
+      "uploadedTimestamp": 1784001896,
+      "uploadedDate": "2026-07-14",
+      "category": {
+        "slug": "p1-regression",
+        "label": "P1 回归",
+        "sort": 1
+      },
+      "screenshots": 2,
+      "videos": 1,
+      "tags": [
+        "p1",
+        "chat",
+        "tool-call"
+      ],
+      "result": "pass",
+      "duration": "41.0s"
     }
   ],
   "skipped": [],

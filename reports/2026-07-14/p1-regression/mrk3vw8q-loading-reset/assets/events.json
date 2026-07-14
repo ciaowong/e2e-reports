@@ -1,0 +1,892 @@
+{
+  "networkEvents": [
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/onboarding/check-user"
+    },
+    {
+      "kind": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/runtime/slot"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/onboarding/check-user",
+      "bodyPreview": "{\"ok\":true,\"isNewUser\":false,\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"runtimeMode\":\"acs\"}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/runtime/slot",
+      "bodyPreview": "{\"ok\":true,\"data\":{\"hostCode\":\"acs\",\"slotId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"containerName\":\"iboxclaw--iboxclaw-sbs-605-b9g9q\",\"instanceKey\":\"iboxclaw-chat-a39ede99-15c3-4b88-b23e-3d266a8de270\",\"status\":\"ready\",\"dataRestoreStatus\":\"none\",\"runtimeMode\":\"acs\",\"message\":\"ACS sandbox ready\",\"healthReady\":true,\"healthCheckAttempts\":0,\"healthCheckDurationMs\":0,\"healthCheckFallback\":false,\"healthCheckUrl\":\"\"}}"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/models"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/models"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500",
+      "bodyPreview": "{\"list\":[]}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500",
+      "bodyPreview": "{\"list\":[]}"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/announcements/popups?lastReadId=999999999"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/inbox/cron-unread?limit=20&offset=0"
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "response",
+      "status": 404,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations/agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94/messages?limit=100",
+      "bodyPreview": "{\"error\":\"会话不存在\"}"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=50"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=50",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"title\":\"你好\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:44:27.000Z\",\"lastActiveAt\":\"2026-07-14T03:44:27.000Z\"}]}"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=50"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=50",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"title\":\"你好\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:44:48.000Z\",\"lastActiveAt\":\"2026-07-14T03:44:48.000Z\"}]}"
+    },
+    {
+      "kind": "request",
+      "method": "GET",
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500"
+    },
+    {
+      "kind": "response",
+      "status": 200,
+      "url": "http://127.0.0.1:5174/iboxclaw-chat-web-bff/api/conversations?prefix=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3A&limit=500",
+      "bodyPreview": "{\"list\":[{\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"title\":\"你好\",\"isPinned\":false,\"pinnedAt\":null,\"pinSortOrder\":null,\"updatedAt\":\"2026-07-14T03:44:48.000Z\",\"lastActiveAt\":\"2026-07-14T03:44:48.000Z\"}]}"
+    }
+  ],
+  "wsFrames": [
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/?token=<redacted>",
+      "payload": "{\"type\":\"connected\"}",
+      "parsed": {
+        "type": "connected"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/?token=<redacted>",
+      "payload": "{\"type\":\"ping\"}",
+      "parsed": {
+        "type": "ping"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/?token=<redacted>",
+      "payload": "{\"type\":\"ping\"}",
+      "parsed": {
+        "type": "ping"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"register\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\"}",
+      "parsed": {
+        "type": "register",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.connected\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\"}",
+      "parsed": {
+        "type": "chat.connected",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/notifications?token=<redacted>",
+      "payload": "{\"type\":\"notifications.connected\",\"event\":\"notifications.connected\",\"payload\":{\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\"}}",
+      "parsed": {
+        "type": "notifications.connected",
+        "event": "notifications.connected",
+        "payload": {
+          "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/notifications?token=<redacted>",
+      "payload": "{\"type\":\"notifications.connected\",\"event\":\"notifications.connected\",\"payload\":{\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\"}}",
+      "parsed": {
+        "type": "notifications.connected",
+        "event": "notifications.connected",
+        "payload": {
+          "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270"
+        }
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.message\",\"id\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"你好\",\"mediaUrls\":[],\"agentId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\"}",
+      "parsed": {
+        "type": "chat.message",
+        "id": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "sessionId": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "你好",
+        "mediaUrls": [],
+        "agentId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/?token=<redacted>",
+      "payload": "{\"type\":\"ping\"}",
+      "parsed": {
+        "type": "ping"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-edceae25-8379-4050-af2d-0e000019f3fc\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey\"},\"epoch\":0,\"lastIncomingText\":\"Hey\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-edceae25-8379-4050-af2d-0e000019f3fc",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-7c6e5975-f216-49f7-9238-620ba10dbcce\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey!\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey!\"},\"epoch\":0,\"lastIncomingText\":\"Hey!\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-7c6e5975-f216-49f7-9238-620ba10dbcce",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey!",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey!"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey!"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-a47e5862-2350-416f-b657-8bbdca598a94\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-a47e5862-2350-416f-b657-8bbdca598a94",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-ce242f51-af5e-4fa0-abdd-6735c9e6253e\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-ce242f51-af5e-4fa0-abdd-6735c9e6253e",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-24f0d864-22ef-43ab-a04c-5e302d6464be\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-24f0d864-22ef-43ab-a04c-5e302d6464be",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-f5a27885-649f-4491-88bc-aadca5219eeb\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-f5a27885-649f-4491-88bc-aadca5219eeb",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-13b82f10-4609-43a5-80ea-77a86a4b09ae\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-13b82f10-4609-43a5-80ea-77a86a4b09ae",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-83357b82-9da3-4783-a0be-f899fd2e6726\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name,\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name,\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name,\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-83357b82-9da3-4783-a0be-f899fd2e6726",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name,",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name,"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name,"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-baf9e57c-d534-45a6-b458-8510c515f2a6\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-baf9e57c-d534-45a6-b458-8510c515f2a6",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-92d537d3-02bf-4334-abdb-6f952741288f\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-92d537d3-02bf-4334-abdb-6f952741288f",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-9e0cfdaa-6c61-4aed-965c-2066213602a4\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-9e0cfdaa-6c61-4aed-965c-2066213602a4",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-6e573af5-eb42-405e-9dbf-d1f6188e9896\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-6e573af5-eb42-405e-9dbf-d1f6188e9896",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-81dd289d-6b37-487d-8c42-65819caeebac\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-81dd289d-6b37-487d-8c42-65819caeebac",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-6c29f108-1b47-4cae-b5c0-82124a13c0d9\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-6c29f108-1b47-4cae-b5c0-82124a13c0d9",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-1da96cb0-63e2-4793-8e03-db094a6f2d4c\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-1da96cb0-63e2-4793-8e03-db094a6f2d4c",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-e2b183d9-0011-44ec-999e-368057ad1019\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-e2b183d9-0011-44ec-999e-368057ad1019",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-eafae131-2f79-45fa-8243-bdf0ace15404\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"idempotencyKey\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\",\"traceId\":\"062829c5-4dcb-443a-ac88-c35349c831b2\",\"sourcePathHint\":\"runtimeBridge.finalize\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?\"},\"epoch\":0,\"lastIncomingText\":\"Hey! I just came online. Who am I? Who are you?\\n\\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-eafae131-2f79-45fa-8243-bdf0ace15404",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "idempotencyKey": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01",
+        "traceId": "062829c5-4dcb-443a-ac88-c35349c831b2",
+        "sourcePathHint": "runtimeBridge.finalize",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?"
+        },
+        "epoch": 0,
+        "lastIncomingText": "Hey! I just came online. Who am I? Who are you?\n\nLet's figure out your name, what calls me to mind, and how we vibe together. Got any ideas or should we brainstorm?"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.abort\",\"runId\":\"chat-09e7db78-4fd9-4852-8a4d-7ea171337d01\"}",
+      "parsed": {
+        "type": "chat.abort",
+        "runId": "chat-09e7db78-4fd9-4852-8a4d-7ea171337d01"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.message\",\"id\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"sessionId\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"1+1等于几\",\"mediaUrls\":[],\"agentId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"traceId\":\"3c282e2d-c019-4f04-af04-bfbaa9052601\"}",
+      "parsed": {
+        "type": "chat.message",
+        "id": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "sessionId": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "1+1等于几",
+        "mediaUrls": [],
+        "agentId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "traceId": "3c282e2d-c019-4f04-af04-bfbaa9052601"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-1d425a49-005c-4422-b9ba-413649066146\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"1+1\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"idempotencyKey\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"traceId\":\"3c282e2d-c019-4f04-af04-bfbaa9052601\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"1+1\"},\"epoch\":0,\"lastIncomingText\":\"1+1\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-1d425a49-005c-4422-b9ba-413649066146",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "1+1",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "idempotencyKey": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "traceId": "3c282e2d-c019-4f04-af04-bfbaa9052601",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "1+1"
+        },
+        "epoch": 0,
+        "lastIncomingText": "1+1"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-00513ecc-644c-46b1-bb9f-f923043c5c5a\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"1+1 等于\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"idempotencyKey\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"traceId\":\"3c282e2d-c019-4f04-af04-bfbaa9052601\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"1+1 等于\"},\"epoch\":0,\"lastIncomingText\":\"1+1 等于\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-00513ecc-644c-46b1-bb9f-f923043c5c5a",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "1+1 等于",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "idempotencyKey": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "traceId": "3c282e2d-c019-4f04-af04-bfbaa9052601",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "1+1 等于"
+        },
+        "epoch": 0,
+        "lastIncomingText": "1+1 等于"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-6a6e51ee-6790-4c6b-afc8-817c439667f3\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"1+1 等于 2。\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"idempotencyKey\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"traceId\":\"3c282e2d-c019-4f04-af04-bfbaa9052601\",\"sourcePathHint\":\"runtimeBridge.partial\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"1+1 等于 2。\"},\"epoch\":0,\"lastIncomingText\":\"1+1 等于 2。\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-6a6e51ee-6790-4c6b-afc8-817c439667f3",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "1+1 等于 2。",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "idempotencyKey": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "traceId": "3c282e2d-c019-4f04-af04-bfbaa9052601",
+        "sourcePathHint": "runtimeBridge.partial",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "1+1 等于 2。"
+        },
+        "epoch": 0,
+        "lastIncomingText": "1+1 等于 2。"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"chat.reply\",\"deliveryId\":\"d-02a7a605-8362-480b-8898-00e0108588e5\",\"channel\":\"iboxclaw-web-channel\",\"target\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"sessionKey\":\"agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94\",\"text\":\"1+1 等于 2。\",\"deliveryMode\":\"announce\",\"gatewayToken\":\"***REMOVED***\",\"runId\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"idempotencyKey\":\"chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22\",\"traceId\":\"3c282e2d-c019-4f04-af04-bfbaa9052601\",\"sourcePathHint\":\"runtimeBridge.finalize\",\"state\":\"<redacted>\",\"userId\":\"a39ede99-15c3-4b88-b23e-3d266a8de270\",\"source\":\"plugin.ws.openclaw-channel\",\"message\":{\"role\":\"assistant\",\"text\":\"1+1 等于 2。\"},\"epoch\":0,\"lastIncomingText\":\"1+1 等于 2。\"}",
+      "parsed": {
+        "type": "chat.reply",
+        "deliveryId": "d-02a7a605-8362-480b-8898-00e0108588e5",
+        "channel": "iboxclaw-web-channel",
+        "target": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "sessionKey": "agent:a39ede99-15c3-4b88-b23e-3d266a8de270:web:mrk3vx9lo29haf94",
+        "text": "1+1 等于 2。",
+        "deliveryMode": "announce",
+        "gatewayToken": "***REMOVED***",
+        "runId": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "idempotencyKey": "chat-58e8e3fb-d573-4e0b-bbea-bdea15e22a22",
+        "traceId": "3c282e2d-c019-4f04-af04-bfbaa9052601",
+        "sourcePathHint": "runtimeBridge.finalize",
+        "state": "<redacted>",
+        "userId": "a39ede99-15c3-4b88-b23e-3d266a8de270",
+        "source": "plugin.ws.openclaw-channel",
+        "message": {
+          "role": "assistant",
+          "text": "1+1 等于 2。"
+        },
+        "epoch": 0,
+        "lastIncomingText": "1+1 等于 2。"
+      }
+    },
+    {
+      "direction": "sent",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"ping\"}",
+      "parsed": {
+        "type": "ping"
+      }
+    },
+    {
+      "direction": "received",
+      "url": "ws://127.0.0.1:5174/iboxclaw-chat-web-bff/ws/chat?sessionKey=agent%3Aa39ede99-15c3-4b88-b23e-3d266a8de270%3Aweb%3Amrk3vx9lo29haf94&token=<redacted>",
+      "payload": "{\"type\":\"pong\"}",
+      "parsed": {
+        "type": "pong"
+      }
+    }
+  ]
+}
