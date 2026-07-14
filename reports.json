@@ -125,28 +125,6 @@
         "mcp"
       ],
       "result": "pass"
-    },
-    {
-      "slug": "mrk541a8-tool-call-loading",
-      "title": "P1 Tool-call Loading 持久性",
-      "href": "reports/2026-07-14/tool-call-loading/mrk541a8/",
-      "sourceReport": "evidence-report-mrk541a8-tool-call-loading",
-      "uploadedAt": "2026-07-14T13:13:47.595824+08:00",
-      "uploadedTimestamp": 1784006027,
-      "uploadedDate": "2026-07-14",
-      "category": {
-        "slug": "tool-call-loading",
-        "label": "Tool-call Loading",
-        "sort": 1
-      },
-      "screenshots": 2,
-      "videos": 1,
-      "tags": [
-        "p1",
-        "chat",
-        "tool-call"
-      ],
-      "result": "pass"
     }
   ],
   "skipped": [],
