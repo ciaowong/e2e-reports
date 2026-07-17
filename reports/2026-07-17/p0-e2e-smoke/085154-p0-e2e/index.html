@@ -1,76 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>P0 端到端回归 - 2026-07-17</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.6}
-.header{background:linear-gradient(135deg,#1e293b,#334155);padding:24px 20px;text-align:center}
-.header h1{font-size:1.5rem;font-weight:700}
-.header .meta{color:#94a3b8;font-size:0.85rem;margin-top:8px}
-.status-badge{display:inline-block;background:#16a34a;color:#fff;padding:4px 14px;border-radius:4px;font-size:0.85rem;font-weight:600;margin-top:12px}
-.section{max-width:840px;margin:0 auto;padding:20px 16px}
-.section h2{font-size:1.1rem;color:#cbd5e1;border-bottom:1px solid #334155;padding-bottom:8px;margin-bottom:16px}
-.video-container{position:relative;width:100%;max-width:390px;margin:0 auto}
-.video-container video{width:100%;border-radius:8px;border:1px solid #334155}
-.screenshots{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.screenshot{text-align:center}
-.screenshot img{width:100%;border-radius:6px;border:1px solid #334155}
-.screenshot .caption{font-size:0.78rem;color:#94a3b8;margin-top:6px}
-.summary{background:#1e293b;border-radius:8px;padding:16px;margin-bottom:20px}
-.summary table{width:100%;border-collapse:collapse}
-.summary td{padding:6px 12px;border-bottom:1px solid #334155;font-size:0.85rem}
-.summary td:first-child{color:#94a3b8;width:40%}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>P0 端到端一气呵成回归 - 2026-07-17</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f6f7f9;
+      --panel: #ffffff;
+      --ink: #171a21;
+      --muted: #646d7b;
+      --line: #e1e6ef;
+      --ok: #157f4f;
+      --accent: #285cc8;
+      --accent-soft: #eef4ff;
+      --orange: #e96f1c;
+      --orange-soft: #fff3ea;
+      --shadow: 0 10px 28px rgba(23, 26, 33, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffffff 0, #ffffff 128px, var(--page) 128px);
+      background-color: var(--page);
+      background-repeat: no-repeat;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      width: min(1080px, 100%);
+      margin: 0 auto;
+      padding: 28px 28px 56px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 6px 0 24px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.1;
+      letter-spacing: 0;
+      font-weight: 850;
+    }
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .brand-tile {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #f2c39d;
+      border-radius: 8px;
+      background: var(--orange-soft);
+      color: var(--orange);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0 0 22px;
+    }
+    .metric {
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 15px;
+      overflow-wrap: anywhere;
+    }
+    .metric.ok strong { color: var(--ok); }
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      margin: 0 0 18px;
+    }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 12px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: 19px;
+    }
+    .badge {
+      border: 1px solid #b7e2cd;
+      border-radius: 999px;
+      color: var(--ok);
+      background: #eefaf3;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+    }
+    img, video {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+    }
+    figcaption {
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 4px 0 0;
+    }
+    @media (max-width: 760px) {
+      main { padding: 18px 14px 40px; }
+      h1 { font-size: 27px; }
+      .summary, .grid { grid-template-columns: 1fr; }
+      .section { padding: 12px; }
+      .section-head { display: grid; }
+    }
+  </style>
 </head>
 <body>
-<div class="header">
-<h1>P0 端到端回归</h1>
-<div class="meta">2026-07-17 08:37 | Playwright Chromium | iPhone 12 (390x844)</div>
-<div class="status-badge">ALL PASS</div>
-</div>
-<div class="section">
-<h2>测试摘要</h2>
-<div class="summary">
-<table>
-<tr><td>测试</td><td>P0 端到端一气呵成（登录→沙箱→发消息→收回复）</td></tr>
-<tr><td>结果</td><td>PASS</td></tr>
-<tr><td>耗时</td><td>4.0 分钟</td></tr>
-<tr><td>方式</td><td>Playwright 真实浏览器操作，全程 headless Chromium</td></tr>
-<tr><td>视口</td><td>390x844 (iPhone 12)</td></tr>
-<tr><td>登录</td><td>手机号+图形验证码+短信验证码自动回填</td></tr>
-<tr><td>Token 一致性</td><td>DB plugin_token = 沙箱 WS 发送 token，一致</td></tr>
-<tr><td>LLM 回复</td><td>answer:45（17+28=45 正确）</td></tr>
-<tr><td>回复落库</td><td>run.persist.flush 成功</td></tr>
-</table>
-</div>
-</div>
-<div class="section">
-<h2>全程录屏</h2>
-<div class="video-container">
-<video controls preload="metadata" width="390">
-<source src="videos/p0-e2e-smoke.mp4" type="video/mp4">
-您的浏览器不支持视频播放。
-</video>
-</div>
-</div>
-<div class="section">
-<h2>步骤截图</h2>
-<div class="screenshots">
-<div class="screenshot"><img src="screenshots/01-auth-open.jpg" alt="打开登录页"><div class="caption">01 打开登录页</div></div>
-<div class="screenshot"><img src="screenshots/02-sms-auto-filled.jpg" alt="短信验证码自动回填"><div class="caption">02 短信验证码自动回填</div></div>
-<div class="screenshot"><img src="screenshots/03-auth-success.jpg" alt="登录成功"><div class="caption">03 登录成功</div></div>
-<div class="screenshot"><img src="screenshots/04-onboarding.jpg" alt="入职页"><div class="caption">04 入职引导页</div></div>
-<div class="screenshot"><img src="screenshots/05-chat-ready.jpg" alt="聊天页可用"><div class="caption">05 聊天页可用</div></div>
-<div class="screenshot"><img src="screenshots/06-before-send.jpg" alt="填写消息"><div class="caption">06 填写测试消息</div></div>
-<div class="screenshot"><img src="screenshots/07-after-send.jpg" alt="消息已发送"><div class="caption">07 消息已发送</div></div>
-<div class="screenshot"><img src="screenshots/08-after-reply.jpg" alt="收到回复"><div class="caption">08 收到回复</div></div>
-</div>
-</div>
-<div class="section" style="text-align:center;color:#64748b;font-size:0.8rem;padding-top:30px;padding-bottom:30px">
-iBoxClaw P0 Regression - 2026-07-17
-</div>
+  <main>
+    <header>
+      <div>
+        <a href="../../../../">iBoxClaw 自动化测试</a>
+        <h1>P0 端到端一气呵成回归</h1>
+      </div>
+      <div class="brand-tile" aria-hidden="true">P0</div>
+    </header>
+
+    <section class="summary" aria-label="执行摘要">
+      <div class="metric ok"><span>结果</span><strong>通过</strong></div>
+      <div class="metric"><span>日期</span><strong>2026-07-17</strong></div>
+      <div class="metric"><span>范围</span><strong>登录→沙箱→发消息→收回复</strong></div>
+      <div class="metric"><span>证据</span><strong>8 张截图 / 1 段录屏</strong></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>登录→沙箱→发消息→收回复</h2>
+        <span class="badge">通过</span>
+      </div>
+      <p class="note">Playwright 真实浏览器操作，全程 headless Chromium，视口 390x844 (iPhone 12)。手机号+图形验证码+短信验证码自动回填，Token 一致性 DB plugin_token = 沙箱 WS 发送 token，LLM 回复 answer:45（17+28=45 正确），回复落库 run.persist.flush 成功。耗时 4.0 分钟。</p>
+      <div class="grid">
+        <figure>
+          <img src="assets/01-auth-open.jpg" alt="打开登录页" />
+          <figcaption>01 打开登录页</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/02-sms-auto-filled.jpg" alt="短信验证码自动回填" />
+          <figcaption>02 短信验证码自动回填</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/03-auth-success.jpg" alt="登录成功" />
+          <figcaption>03 登录成功</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/04-onboarding.jpg" alt="入职引导页" />
+          <figcaption>04 入职引导页</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/05-chat-ready.jpg" alt="聊天页可用" />
+          <figcaption>05 聊天页可用</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/06-before-send.jpg" alt="填写测试消息" />
+          <figcaption>06 填写测试消息</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/07-after-send.jpg" alt="消息已发送" />
+          <figcaption>07 消息已发送</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/08-after-reply.jpg" alt="收到回复" />
+          <figcaption>08 收到回复</figcaption>
+        </figure>
+        <figure>
+          <video controls preload="metadata" src="assets/p0-e2e-recording.mp4"></video>
+          <figcaption>端到端全过程录屏</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
