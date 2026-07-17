@@ -7,6 +7,22 @@
   },
   "reports": [
     {
+      "slug": "085154-p0-e2e-smoke",
+      "title": "P0 端到端一气呵成回归",
+      "href": "reports/2026-07-17/p0-e2e-smoke/085154-p0-e2e/",
+      "sourceReport": "p0-e2e-smoke.spec.ts",
+      "uploadedAt": "2026-07-17T08:37:00+08:00",
+      "uploadedTimestamp": 1784248620,
+      "uploadedDate": "2026-07-17",
+      "category": {
+        "slug": "p0-e2e-smoke",
+        "label": "P0 端到端回归",
+        "sort": 0
+      },
+      "screenshots": 8,
+      "videos": 1
+    },
+    {
       "slug": "mrgl0iif-p0-baseline",
       "title": "P0 基线回归",
       "href": "reports/2026-07-12/p0-baseline/mrgl0iif-p0-baseline/",
