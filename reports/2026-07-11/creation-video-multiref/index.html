@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>创作页图生视频 - 2026-07-11</title>
   <style>
-    :root {
+:root {
       color-scheme: light;
       --page: #f6f7f9;
       --panel: #ffffff;
@@ -101,6 +101,68 @@
     .catalog {
       display: grid;
       gap: 14px;
+    }
+    .portal-grid {
+      display: grid;
+      gap: 14px;
+      margin: 18px 0 24px;
+    }
+    .portal-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      min-height: 112px;
+      padding: 16px 18px;
+      border: 1px solid var(--line-strong);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      color: var(--ink);
+    }
+    .portal-card:hover {
+      border-color: #b7c8ee;
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+    .portal-card.ops:hover {
+      border-color: #b8e2db;
+      background: var(--teal-soft);
+    }
+    .portal-card h2 {
+      margin: 0 0 6px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+    .portal-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+    .portal-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      margin-bottom: 10px;
+      padding: 2px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fafafa;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .portal-arrow {
+      color: var(--muted);
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .section-title {
+      margin: 26px 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
     }
     .metrics {
       display: grid;
@@ -267,6 +329,23 @@
     details[open] > summary .chevron {
       transform: rotate(45deg);
     }
+
+    .feature-flat {
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
+    .feature-flat .feature-name {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .feature-flat .report-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
     .module-body {
       border-top: 1px solid var(--line);
       background: var(--panel-soft);
@@ -382,6 +461,9 @@
       .report-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      .portal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
       .module-body .report-list {
         grid-template-columns: 1fr;
       }
@@ -441,6 +523,13 @@
         grid-template-columns: 1fr;
         gap: 3px;
       }
+      .portal-card {
+        grid-template-columns: 1fr;
+        min-height: 0;
+      }
+      .portal-arrow {
+        display: none;
+      }
       .report-title {
         white-space: normal;
         overflow-wrap: anywhere;
@@ -450,7 +539,6 @@
 </head>
 <body>
   <main>
-
       <header>
         <nav><a href="../../../">全部报告</a><a href="../">2026-07-11</a></nav>
         <h1>创作页图生视频</h1>
@@ -465,15 +553,14 @@
       <div class="report-list">
       <article class="report-card">
         <h2><a href="mrfnm85u-video-multiref-5-images/">图生视频多参考图</a></h2>
-        <p>evidence-report-mrfnm85u-video-multiref-5-images</p>
+        <p>2026-07-11 · mrfnm85u-video-multiref-5-images</p>
         <div class="badges">
           <span class="badge">创作页图生视频</span>
           <span class="badge">截图 3</span>
           <span class="badge ok">录屏 1</span>
         </div>
       </article>
-    </div>
-
+      </div>
   </main>
 </body>
 </html>

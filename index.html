@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>iBoxClaw 运行与验证门户</title>
+  <title>iBoxClaw 自动化测试</title>
   <style>
-    :root {
+:root {
       color-scheme: light;
       --page: #f6f7f9;
       --panel: #ffffff;
@@ -539,11 +539,125 @@
 </head>
 <body>
   <main>
-
-      <header class="page-head">
-        <h1>iBoxClaw 运行与验证门户</h1>
-        <div class="brand-tile" aria-hidden="true">iB</div>
-      </header>
+      <h2 id="test-reports" class="section-title">自动化测试报告</h2>
+      <section class="catalog" aria-label="测试报告目录">
+      <details class="module p0" open>
+        <summary class="module-summary">
+          <span class="summary-main">
+            <span class="tier">P0</span>
+            <span class="summary-text">
+              <span class="module-title">P0 回归</span>
+              <span class="module-subtitle">登录 / 聊天，报告必须有录屏</span>
+            </span>
+          </span>
+          <span class="summary-side"><span class="count">2 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+        </summary>
+        <div class="module-body">
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">P0 端到端一气呵成回归</span>
+            <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-17/p0-e2e-smoke/085154-p0-e2e/">
+          <span class="report-title">P0 端到端一气呵成回归</span>
+          <span class="report-meta">8 图 / 1 录屏</span>
+        </a>
+          </div>
+        </details>
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">P0 基线回归</span>
+            <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-12/p0-baseline/mrgl0iif-p0-baseline/">
+          <span class="report-title">P0 基线回归</span>
+          <span class="report-meta">8 图 / 2 录屏</span>
+        </a>
+          </div>
+        </details>
+        </div>
+      </details>
+      <details class="module p1" open>
+        <summary class="module-summary">
+          <span class="summary-main">
+            <span class="tier">P1</span>
+            <span class="summary-text">
+              <span class="module-title">P1 回归</span>
+              <span class="module-subtitle">媒体能力 / 流式稳定性，按功能与上传时间归类</span>
+            </span>
+          </span>
+          <span class="summary-side"><span class="count">6 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+        </summary>
+        <div class="module-body">
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">聊天 MCP 图生视频</span>
+            <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-10/chat-mcp-create-video/mreihz4p-chat-mcp-create_video/">
+          <span class="report-title">聊天 MCP 图生视频</span>
+          <span class="report-meta">10 图 / 1 录屏</span>
+        </a>
+          </div>
+        </details>
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">聊天 MCP 图生图</span>
+            <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-10/chat-mcp-edit-image/mrehnhzk-chat-mcp-edit_image/">
+          <span class="report-title">聊天 MCP 图生图</span>
+          <span class="report-meta">8 图 / 1 录屏</span>
+        </a>
+          </div>
+        </details>
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">创作页图生视频</span>
+            <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-11/creation-video-multiref/mrfnm85u-video-multiref-5-images/">
+          <span class="report-title">图生视频多参考图</span>
+          <span class="report-meta">3 图 / 1 录屏</span>
+        </a>
+          </div>
+        </details>
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">创作页图生图</span>
+            <span class="summary-side"><span class="count">2 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnkwg7-img2img-upload-ref/">
+          <span class="report-title">图生图参考图上传</span>
+          <span class="report-meta">3 图 / 1 录屏</span>
+        </a>
+        <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnvm1z-real-img2img-upload-ref/">
+          <span class="report-title">真实创作页图生图</span>
+          <span class="report-meta">4 图 / 1 录屏</span>
+        </a>
+          </div>
+        </details>
+        <details class="feature" open>
+          <summary class="feature-summary">
+            <span class="feature-name">流式稳定性</span>
+            <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+                    <div class="report-list">
+        <a class="report-link" href="reports/2026-07-14/streaming-stability/mrk6gn2m/">
+          <span class="report-title">P1 流式状态稳定性（24轮）</span>
+          <span class="report-meta">24 图 / 1 录屏</span>
+        </a>
+          </div>
+        </details>
+        </div>
+      </details>
+      </section>
       <section class="portal-grid" aria-label="门户入口">
         <a class="portal-card ops" href="ops/iboxclaw-callchain.html">
           <span>
@@ -562,205 +676,10 @@
           <span class="portal-arrow" aria-hidden="true">›</span>
         </a>
       </section>
-      <h2 id="test-reports" class="section-title">自动化测试报告</h2>
-      <section class="catalog" aria-label="测试报告目录">
-        <details class="module p0">
-          <summary class="module-summary">
-            <span class="summary-main">
-              <span class="tier">P0</span>
-              <span class="summary-text">
-                <span class="module-title">基线回归</span>
-                <span class="module-subtitle">登录 / 聊天，报告必须有录屏</span>
-              </span>
-            </span>
-	           <span class="summary-side"><span class="count">7 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-         </summary>
-         <div class="module-body">
-
-         <details class="feature">
-            <summary class="feature-summary">
-              <span class="feature-name">P0 端到端一气呵成回归</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-17</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-17/p0-e2e-smoke/085154-p0-e2e/">
-                  <span class="report-title">P0 端到端一气呵成回归</span>
-                  <span class="report-meta">8 图 / 1 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          <details class="feature">
-            <summary class="feature-summary">
-              <span class="feature-name">P0 基线回归</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-12</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-12/p0-baseline/mrgl0iif-p0-baseline/">
-                  <span class="report-title">P0 基线回归</span>
-                  <span class="report-meta">8 图 / 2 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          <details class="feature">
-            <summary class="feature-summary">
-              <span class="feature-name">登录</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-10</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/current-auth-login-real/2026-07-10/2026-07-10-212146-current-auth-login-real/">
-                  <span class="report-title">真实登录基线</span>
-                  <span class="report-meta">录屏齐全</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-
-          <details class="feature">
-            <summary class="feature-summary">
-              <span class="feature-name">聊天</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-10</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/current-chat-reply-real/2026-07-10/2026-07-10-212219-current-chat-reply-real/">
-                  <span class="report-title">真实聊天回复基线</span>
-                  <span class="report-meta">录屏齐全</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          </div>
-        </details>
-        <details class="module p1">
-          <summary class="module-summary">
-            <span class="summary-main">
-              <span class="tier">P1</span>
-              <span class="summary-text">
-                <span class="module-title">P1 回归</span>
-                <span class="module-subtitle">按功能归类；每个场景只展示最新合格报告</span>
-              </span>
-            </span>
-            <span class="summary-side"><span class="count">6 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-          </summary>
-          <div class="module-body">
-
-          <details class="feature">
-            <summary class="feature-summary">
-              <span class="feature-name">流式状态稳定性</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-14</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-14/streaming-stability/mrk6gn2m/">
-                  <span class="report-title">P1 流式状态稳定性（24轮）</span>
-                  <span class="report-meta">24 图 / 1 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
-              <span class="feature-name">聊天 MCP 图生视频</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-10</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-10/chat-mcp-create-video/mreihz4p-chat-mcp-create_video/">
-                  <span class="report-title">聊天 MCP 图生视频</span>
-                  <span class="report-meta">10 图 / 1 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
-              <span class="feature-name">聊天 MCP 图生图</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-10</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-10/chat-mcp-edit-image/mrehnhzk-chat-mcp-edit_image/">
-                  <span class="report-title">聊天 MCP 图生图</span>
-                  <span class="report-meta">8 图 / 1 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
-              <span class="feature-name">创作页图生视频</span>
-              <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-11</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-11/creation-video-multiref/mrfnm85u-video-multiref-5-images/">
-                  <span class="report-title">图生视频多参考图</span>
-                  <span class="report-meta">3 图 / 1 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-
-          <details class="feature media">
-            <summary class="feature-summary">
-              <span class="feature-name">创作页图生图</span>
-              <span class="summary-side"><span class="count">2 份报告</span><span class="chevron" aria-hidden="true"></span></span>
-            </summary>
-
-            <details class="date">
-              <summary class="date-summary"><span>2026-07-11</span><span class="summary-side"><span class="count">上传倒序</span><span class="chevron" aria-hidden="true"></span></span></summary>
-              <div class="report-list">
-                <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnvm1z-real-img2img-upload-ref/">
-                  <span class="report-title">真实创作页图生图</span>
-                  <span class="report-meta">4 图 / 1 录屏</span>
-                </a>
-                <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnkwg7-img2img-upload-ref/">
-                  <span class="report-title">图生图参考图上传</span>
-                  <span class="report-meta">3 图 / 1 录屏</span>
-                </a>
-        </div>
-            </details>
-
-          </details>
-        </div>
-        </details>
-
+      <header class="page-head">
+        <h1>iBoxClaw 运行与验证门户</h1>
+        <div class="brand-tile" aria-hidden="true">iB</div>
+      </header>
 
   </main>
 </body>
