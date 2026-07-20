@@ -329,6 +329,74 @@
     details[open] > summary .chevron {
       transform: rotate(45deg);
     }
+    .more {
+      margin-top: 14px;
+    }
+    .more-summary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      transition: all 0.18s ease;
+    }
+    .more-summary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .more-text-open { display: none; }
+    details[open] > .more-summary .more-text-closed { display: none; }
+    details[open] > .more-summary .more-text-open { display: inline; }
+    .more-summary .more-text {
+      pointer-events: none;
+    }
+    .more-summary .more-count {
+      padding: 1px 8px;
+      border-radius: 999px;
+      background: #f5f7fa;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      transition: all 0.18s ease;
+    }
+    .more-summary:hover .more-count {
+      background: #ffffff;
+      color: var(--accent);
+    }
+    .more-summary .chevron {
+      width: 7px;
+      height: 7px;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.18s ease;
+    }
+    details[open] > .more-summary .chevron {
+      transform: rotate(-135deg);
+    }
+    details[open] > .more-summary {
+      border-radius: 8px 8px 0 0;
+      border-bottom: 0;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .more > .report-list {
+      padding: 10px 14px 14px;
+      border: 1px solid var(--line);
+      border-top: 0;
+      border-radius: 0 0 8px 8px;
+      background: #fafbfc;
+    }
 
     .feature-flat {
       padding: 12px 0;
@@ -554,45 +622,41 @@
               <span class="module-subtitle">登录 / 聊天，报告必须有录屏</span>
             </span>
           </span>
-          <span class="summary-side"><span class="count">8 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          <span class="summary-side"><span class="count">7 份报告</span><span class="chevron" aria-hidden="true"></span></span>
         </summary>
         <div class="module-body">
         <div class="report-list">
         <a class="report-link" href="reports/2026-07-20/p0-e2e-smoke/094250-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:37:53 · 7 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 09:42:50 · 7 图 / 1 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-20/p0-e2e-smoke/093536-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 09:35 · 7 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 09:35:36 · 7 图 / 1 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-20/p0-e2e-smoke/004418-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 7 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44:18 · 7 图 / 1 录屏</span>
         </a>
         </div>
         <details class="more">
-          <summary class="more-summary"><span class="more-text more-text-closed">展开更多</span><span class="more-text more-text-open">收起</span><span class="more-count">5 份报告</span><span class="chevron" aria-hidden="true"></span></summary>
+          <summary class="more-summary"><span class="more-text more-text-closed">展开更多</span><span class="more-text more-text-open">收起</span><span class="more-count">4 份报告</span><span class="chevron" aria-hidden="true"></span></summary>
           <div class="report-list">
         <a class="report-link" href="reports/2026-07-18/p0-e2e-smoke/191735-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 7 图 / 2 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-18 19:17:35 · 7 图 / 2 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-18/p0-e2e-smoke/174456-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 7 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-18 17:44:56 · 7 图 / 1 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-18/p0-e2e-smoke/173527-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 1 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-18 17:35:27 · 1 图 / 1 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-17/p0-e2e-smoke/085154-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-17 09:56 · 8 图 / 1 录屏</span>
-        </a>
-        <a class="report-link" href="reports/2026-07-12/p0-baseline/mrgl0iif-p0-baseline/">
-          <span class="report-title">P0 基线回归</span>
-          <span class="report-meta">P0 基线回归 · 2026-07-12 09:57 · 8 图 / 2 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-17 08:51:54 · 8 图 / 1 录屏</span>
         </a>
           </div>
         </details>
@@ -607,7 +671,7 @@
               <span class="module-subtitle">媒体能力 / 流式稳定性，按功能与上传时间归类</span>
             </span>
           </span>
-          <span class="summary-side"><span class="count">6 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+          <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
         </summary>
         <div class="module-body">
         <div class="report-list">
@@ -615,6 +679,45 @@
           <span class="report-title">P1 流式状态稳定性（24轮）</span>
           <span class="report-meta">流式稳定性 · 2026-07-14 13:12 · 24 图 / 1 录屏</span>
         </a>
+        </div>
+        </div>
+      </details>
+      </section>
+
+      <h2 class="section-title">归档</h2>
+      <section class="catalog" aria-label="归档报告">
+      <details class="module p0" open>
+        <summary class="module-summary">
+          <span class="summary-main">
+            <span class="tier">P0</span>
+            <span class="summary-text">
+              <span class="module-title">P0 回归</span>
+              <span class="module-subtitle">登录 / 聊天，报告必须有录屏</span>
+            </span>
+          </span>
+          <span class="summary-side"><span class="count">1 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+        </summary>
+        <div class="module-body">
+        <div class="report-list">
+        <a class="report-link" href="reports/2026-07-12/p0-baseline/mrgl0iif-p0-baseline/">
+          <span class="report-title">P0 基线回归</span>
+          <span class="report-meta">P0 基线回归 · 2026-07-12 09:57 · 8 图 / 2 录屏</span>
+        </a>
+        </div>
+        </div>
+      </details>      <details class="module p1" open>
+        <summary class="module-summary">
+          <span class="summary-main">
+            <span class="tier">P1</span>
+            <span class="summary-text">
+              <span class="module-title">P1 回归</span>
+              <span class="module-subtitle">媒体能力 / 流式稳定性，按功能与上传时间归类</span>
+            </span>
+          </span>
+          <span class="summary-side"><span class="count">5 份报告</span><span class="chevron" aria-hidden="true"></span></span>
+        </summary>
+        <div class="module-body">
+        <div class="report-list">
         <a class="report-link" href="reports/2026-07-10/chat-mcp-create-video/mreihz4p-chat-mcp-create_video/">
           <span class="report-title">聊天 MCP 图生视频</span>
           <span class="report-meta">聊天 MCP 图生视频 · 2026-07-12 09:55 · 10 图 / 1 录屏</span>
@@ -623,14 +726,14 @@
           <span class="report-title">聊天 MCP 图生图</span>
           <span class="report-meta">聊天 MCP 图生图 · 2026-07-12 09:55 · 8 图 / 1 录屏</span>
         </a>
-        </div>
-        <details class="more">
-          <summary class="more-summary"><span class="more-text more-text-closed">展开更多</span><span class="more-text more-text-open">收起</span><span class="more-count">3 份报告</span><span class="chevron" aria-hidden="true"></span></summary>
-          <div class="report-list">
         <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnkwg7-img2img-upload-ref/">
           <span class="report-title">图生图参考图上传</span>
           <span class="report-meta">创作页图生图 · 2026-07-12 09:55 · 3 图 / 1 录屏</span>
         </a>
+        </div>
+        <details class="more">
+          <summary class="more-summary"><span class="more-text more-text-closed">展开更多</span><span class="more-text more-text-open">收起</span><span class="more-count">2 份报告</span><span class="chevron" aria-hidden="true"></span></summary>
+          <div class="report-list">
         <a class="report-link" href="reports/2026-07-11/creation-img2img/mrfnvm1z-real-img2img-upload-ref/">
           <span class="report-title">真实创作页图生图</span>
           <span class="report-meta">创作页图生图 · 2026-07-12 09:55 · 4 图 / 1 录屏</span>

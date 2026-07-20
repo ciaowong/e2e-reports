@@ -329,6 +329,74 @@
     details[open] > summary .chevron {
       transform: rotate(45deg);
     }
+    .more {
+      margin-top: 14px;
+    }
+    .more-summary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      transition: all 0.18s ease;
+    }
+    .more-summary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .more-text-open { display: none; }
+    details[open] > .more-summary .more-text-closed { display: none; }
+    details[open] > .more-summary .more-text-open { display: inline; }
+    .more-summary .more-text {
+      pointer-events: none;
+    }
+    .more-summary .more-count {
+      padding: 1px 8px;
+      border-radius: 999px;
+      background: #f5f7fa;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      transition: all 0.18s ease;
+    }
+    .more-summary:hover .more-count {
+      background: #ffffff;
+      color: var(--accent);
+    }
+    .more-summary .chevron {
+      width: 7px;
+      height: 7px;
+      border-right: 1.5px solid currentColor;
+      border-bottom: 1.5px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.18s ease;
+    }
+    details[open] > .more-summary .chevron {
+      transform: rotate(-135deg);
+    }
+    details[open] > .more-summary {
+      border-radius: 8px 8px 0 0;
+      border-bottom: 0;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .more > .report-list {
+      padding: 10px 14px 14px;
+      border: 1px solid var(--line);
+      border-top: 0;
+      border-radius: 0 0 8px 8px;
+      background: #fafbfc;
+    }
 
     .feature-flat {
       padding: 12px 0;
@@ -559,15 +627,15 @@
           <div class="report-list">
         <a class="report-link" href="reports/2026-07-18/p0-e2e-smoke/191735-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 7 图 / 2 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-18 19:17:35 · 7 图 / 2 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-18/p0-e2e-smoke/174456-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 7 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-18 17:44:56 · 7 图 / 1 录屏</span>
         </a>
         <a class="report-link" href="reports/2026-07-18/p0-e2e-smoke/173527-p0-e2e/">
           <span class="report-title">P0 端到端一气呵成回归</span>
-          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-20 00:44 · 1 图 / 1 录屏</span>
+          <span class="report-meta">P0 端到端一气呵成回归 · 2026-07-18 17:35:27 · 1 图 / 1 录屏</span>
         </a>
           </div>
       </details>
