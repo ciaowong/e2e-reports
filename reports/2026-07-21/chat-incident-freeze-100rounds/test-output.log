@@ -1,0 +1,17 @@
+WS connected
+[10/100] sent
+[20/100] sent
+[30/100] sent
+[40/100] sent
+[50/100] sent
+[60/100] sent
+[70/100] sent
+[80/100] sent
+[90/100] sent
+[100/100] sent
+
+========== SUMMARY ==========
+Rounds: 100 | Accepted: 100 | Terminal: 100 | Errors: 0 | Stalls: 0 | Chunks: 6405
+Incident packages: 1
+   chat-4921f9c4-4eab-4a38-a57f-d0b284a4ea76-mrukg89g-l3oht3 trigger=watchdog.terminalMissing last=dispatch.result missing=terminal
+========== DONE ==========

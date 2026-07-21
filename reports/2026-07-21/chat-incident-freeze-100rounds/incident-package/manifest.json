@@ -1,0 +1,18 @@
+{
+  "runId": "chat-4921f9c4-4eab-4a38-a57f-d0b284a4ea76",
+  "incidentId": "mrukg89g-l3oht3",
+  "trigger": "watchdog.terminalMissing",
+  "lastEvent": "dispatch.result",
+  "missingEvent": "terminal",
+  "workerPid": 69045,
+  "envFingerprint": {
+    "sandboxId": "",
+    "modelRoute": "",
+    "workerPid": 69045,
+    "acceptedAt": 1784632946804,
+    "dispatchAt": 1784632946841
+  },
+  "createdAt": "2026-07-21T11:24:27.991Z",
+  "evidenceGaps": [],
+  "redacted": true
+}
